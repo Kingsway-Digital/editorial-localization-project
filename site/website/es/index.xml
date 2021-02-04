@@ -16,15 +16,8 @@
 	<lastModifiedDate>2021-02-04T16:24:33.017Z</lastModifiedDate>
 	<lastModifiedDate_dt>2021-02-04T16:24:33.017Z</lastModifiedDate_dt>
 	<title_t>Editorial</title_t>
-	<hero_text_html>&lt;ul&gt;
-&lt;li&gt;Move content into folders by locale&lt;/li&gt;
-&lt;li&gt;restrict access to folders based on editor's role&lt;/li&gt;
-&lt;li&gt;reconfigure sidebar to show locale-specific homes&lt;/li&gt;
-&lt;li&gt;update targeting system to cause Engine (and the SiteItemService) to load by locale&lt;/li&gt;
-&lt;li&gt;Configure {locale} macro in the form controls when creating new components&lt;/li&gt;
-&lt;li&gt;Maybe: page controller&lt;/li&gt;
-&lt;/ul&gt;</hero_text_html>
-	<hero_title_html>&lt;h1&gt;Localization Setup Info (es)&lt;/h1&gt;</hero_title_html>
+	<hero_text_html>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</hero_text_html>
+	<hero_title_html>&lt;h1&gt;Welcome (es)&lt;/h1&gt;</hero_title_html>
 	<features_o item-list="true">	<item datasource="features" inline="true">	<key>a89386c4-a205-2681-2db1-c3606f714411</key>
 	<value>One</value>
 <component id="a89386c4-a205-2681-2db1-c3606f714411">
