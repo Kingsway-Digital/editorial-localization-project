@@ -140,7 +140,7 @@
 				<field>
 					<type>input</type>
 					<id>title_t</id>
-					<iceId></iceId>
+					<iceId>page</iceId>
 					<title>Title</title>
 					<description></description>
 					<defaultValue></defaultValue>
@@ -183,7 +183,7 @@
 				<field>
 					<type>rte-tinymce5</type>
 					<id>body_html</id>
-					<iceId></iceId>
+					<iceId>page</iceId>
 					<title>Body</title>
 					<description></description>
 					<defaultValue></defaultValue>
