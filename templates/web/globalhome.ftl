@@ -12,8 +12,8 @@
     <li><a href="/jp">Japanese</a></li>
 </ul>
 
-<h2 <@studio.iceAttr/>>${contentModel.title_t}</h2>
-<section <@studio.iceAttr/>>
+<h2 <@studio.iceAttr iceGroup="page"/>>${contentModel.title_t}</h2>
+<section <@studio.iceAttr iceGroup="page"/>>
     ${contentModel.body_html}
 </section>
 </body>
