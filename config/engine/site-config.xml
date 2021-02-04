@@ -3,7 +3,7 @@
     <version>2</version>
     <targeting>
         <enabled>true</enabled>
-        <rootFolders>/site/website</rootFolders>
+        <rootFolders>/site/website,/site/components</rootFolders>
         <excludePatterns>/site/website/index\.xml</excludePatterns>
         <availableTargetIds>en,es,jp</availableTargetIds>
         <fallbackTargetId>en</fallbackTargetId>
