@@ -1,5 +1,6 @@
 <#import "/templates/system/common/cstudio-support.ftl" as studio />
 <#import "/templates/web/navigation2/navigation.ftl" as nav/>
+<#assign shortLocale = (contentModel.storeUrl?replace("/site/components/",""))?substring(0, 2) />
 
 <div id="left-rail" <@studio.componentAttr component=contentModel ice=true iceGroup="left-rail"/>>
   <div class="inner">
@@ -17,7 +18,7 @@
         <h2>Menu</h2>
       </header>
       <ul>
-		<@nav.renderNavigation "/site/website" 1 true/>
+		<@nav.renderNavigation "/site/website/${shortLocale}" 1 true/>
       </ul>
     </nav>
 
