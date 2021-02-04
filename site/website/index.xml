@@ -13,8 +13,8 @@
 	<folder-name/>
 	<createdDate>2017-1-31T16:18:14.000Z</createdDate>
 	<createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
-	<lastModifiedDate>2021-02-04T21:04:02.410Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-02-04T21:04:02.410Z</lastModifiedDate_dt>
+	<lastModifiedDate>2021-02-04T21:11:13.447Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-02-04T21:11:13.447Z</lastModifiedDate_dt>
 	<title_t>Localization Example</title_t>
 	<navLabel>GlobalHome</navLabel>
 	<body_html>&lt;h2&gt;Steps to Set Up Localization&lt;/h2&gt;
@@ -72,46 +72,32 @@
 &lt;ul&gt;
 &lt;li&gt;Two primary use cases
 &lt;ul&gt;
-&lt;li&gt;Content creation
-&lt;ul&gt;
-&lt;li&gt;I want to create a translation of item A which is in English, into Spanish&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Content lookup
-&lt;ul&gt;
-&lt;li&gt;I want to render an item with a particular path in specific language&lt;/li&gt;
+&lt;li&gt;Content creation&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Content lookup&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
+&lt;li&gt;Notes about the current implementation:
 &lt;ul&gt;
 &lt;li&gt;Only using a 2-letter locale code. We could have used the whole locale code instead.&lt;/li&gt;
-&lt;li&gt;Notes about the current implementation:&lt;/li&gt;
-&lt;li&gt;We could take this approach, but we did not&lt;/li&gt;
-&lt;li&gt;This approach relies on the location of content in the content source tree
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Content Creation&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;The system will look up a translation in the same location as the source, but with a different prefix corresponding to the language
+&lt;li&gt;As of now, now built-in tools to right-click and choose "translate this", so instead you have to manually create the translation by clicking "copy" on the source item, and then clicking "paste" where you would like the translation created&lt;/li&gt;
+&lt;li&gt;You have to then manually re-wire everything yourself
 &lt;ul&gt;
-&lt;li&gt;Current implementation just uses a 2-letter locale code, but you can use full locale codes too.&lt;/li&gt;
+&lt;li&gt;e.g. if an article points to a related item, the related item will keep pointing to the related item in the source language until you create the translation of it &lt;strong&gt;and then manually re-link it&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;So what do you do when the item requested is not present in the desired locale?
+&lt;/ul&gt;
+&lt;h4&gt;Content Lookup&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;Crafter falls back to a designated language for the site
-&lt;ul&gt;
-&lt;li&gt;e.g. if /jp/style is not present, it will return /en/style&lt;/li&gt;
+&lt;li&gt;Site Item Service has been taught how to fall back&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3&gt;&amp;nbsp;&lt;/h3&gt;
 &lt;h3&gt;Questions&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;br /&gt;&lt;/li&gt;
