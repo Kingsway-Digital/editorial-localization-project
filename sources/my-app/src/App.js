@@ -12,8 +12,10 @@ function App() {
         <Grid item>
             <PageByUrl pageUrl={"/en"} />
             <PageByUrl pageUrl={"/en/style"} />
+
             <PageByUrl pageUrl={"/es"} />
             <PageByUrl pageUrl={"/es/style"} />
+
             <PageByUrl pageUrl={"/jp"} />
             <PageByUrl pageUrl={"/jp/style"} />
         </Grid>
