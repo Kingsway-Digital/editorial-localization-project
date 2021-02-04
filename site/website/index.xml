@@ -13,8 +13,8 @@
 	<folder-name/>
 	<createdDate>2017-1-31T16:18:14.000Z</createdDate>
 	<createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
-	<lastModifiedDate>2021-02-04T21:11:13.447Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-02-04T21:11:13.447Z</lastModifiedDate_dt>
+	<lastModifiedDate>2021-02-04T22:40:36.850Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-02-04T22:40:36.850Z</lastModifiedDate_dt>
 	<title_t>Localization Example</title_t>
 	<navLabel>GlobalHome</navLabel>
 	<body_html>&lt;h2&gt;Steps to Set Up Localization&lt;/h2&gt;
@@ -37,7 +37,7 @@
 &lt;li&gt;sometimes by introducing a whole new identifier that is common to both&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;This approach:
+&lt;li&gt;Crafter's approach:
 &lt;ul&gt;
 &lt;li&gt;Place content in a folder corresponding to its locale&lt;/li&gt;
 &lt;li&gt;Linkage between translations is specified by the path - two files in the same location but with different language folders are translations of one another.
@@ -59,7 +59,7 @@
 &lt;li&gt;But these are not:
 &lt;ul&gt;
 &lt;li&gt;/site/website/&lt;strong&gt;en&lt;/strong&gt;/style/&lt;strong&gt;hats&lt;/strong&gt;/index.xml&lt;/li&gt;
-&lt;li&gt;/site/website/&lt;strong&gt;es&lt;/strong&gt;/style/&lt;strong&gt;argentinian-hats&lt;/strong&gt;/index.xml&lt;/li&gt;
+&lt;li&gt;/site/website/&lt;strong&gt;es&lt;/strong&gt;/style/&lt;strong&gt;argentinian-hats&lt;/strong&gt;/index.xml&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -86,8 +86,8 @@
 &lt;/ul&gt;
 &lt;h4&gt;Content Creation&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;As of now, now built-in tools to right-click and choose "translate this", so instead you have to manually create the translation by clicking "copy" on the source item, and then clicking "paste" where you would like the translation created&lt;/li&gt;
-&lt;li&gt;You have to then manually re-wire everything yourself
+&lt;li&gt;As of now, no built-in tools to right-click and choose "translate this", so instead you have to manually create the translation by clicking "copy" on the source item, and then clicking "paste" where you would like the translation created (this is not bad)&lt;/li&gt;
+&lt;li&gt;You have to then manually re-wire relationships in the copied content
 &lt;ul&gt;
 &lt;li&gt;e.g. if an article points to a related item, the related item will keep pointing to the related item in the source language until you create the translation of it &lt;strong&gt;and then manually re-link it&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ul&gt;
@@ -95,9 +95,9 @@
 &lt;/ul&gt;
 &lt;h4&gt;Content Lookup&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;Site Item Service has been taught how to fall back&lt;/li&gt;
+&lt;li&gt;Site Item Service has been taught how to fall back to a default language&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;&amp;nbsp;&lt;/h3&gt;
+&lt;h3&gt;&lt;br /&gt;&lt;/h3&gt;
 &lt;h3&gt;Questions&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;br /&gt;&lt;/li&gt;
