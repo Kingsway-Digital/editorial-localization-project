@@ -108,8 +108,26 @@
 								<modulehook>
 									<name>wcm-root-folder</name>									
 									<params>
-										<label>Pages</label>
-										<path>/site/website</path>
+										<label>Pages (en)</label>
+										<path>/site/website/en</path>
+										<showRootItem>true</showRootItem>
+										<onClick>preview</onClick>
+									</params>
+								</modulehook>
+								<modulehook>
+									<name>wcm-root-folder</name>									
+									<params>
+										<label>Pages (es)</label>
+										<path>/site/website/es</path>
+										<showRootItem>true</showRootItem>
+										<onClick>preview</onClick>
+									</params>
+								</modulehook>
+								<modulehook>
+									<name>wcm-root-folder</name>									
+									<params>
+										<label>Pages (jp)</label>
+										<path>/site/website/jp</path>
 										<showRootItem>true</showRootItem>
 										<onClick>preview</onClick>
 									</params>
@@ -178,6 +196,15 @@
 										</roles>
 										<label>Site Config</label>
 										<path>/site-config</path>
+									</params>
+								</modulehook>
+								<modulehook>
+									<name>wcm-root-folder</name>									
+									<params>
+										<label>Pages (global)</label>
+										<path>/site/website</path>
+										<showRootItem>true</showRootItem>
+										<onClick>preview</onClick>
 									</params>
 								</modulehook>
 							</modulehooks>
