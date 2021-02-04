@@ -13,38 +13,12 @@
 	<folder-name/>
 	<createdDate>2017-1-31T16:18:14.000Z</createdDate>
 	<createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
-	<lastModifiedDate>2021-02-04T21:00:50.603Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-02-04T21:00:50.603Z</lastModifiedDate_dt>
+	<lastModifiedDate>2021-02-04T21:01:53.642Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-02-04T21:01:53.642Z</lastModifiedDate_dt>
 	<title_t>Localization Example</title_t>
 	<navLabel>GlobalHome</navLabel>
 	<body_html>&lt;h2&gt;Steps to Set Up Localization&lt;/h2&gt;
-&lt;h2&gt;To Do&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Fix main nav to support URLs for pages that don't exist yet&lt;/li&gt;
-&lt;li&gt;restrict access to folders based on editor's role&lt;/li&gt;
-&lt;li&gt;reconfigure sidebar to show locale-specific homes&lt;/li&gt;
-&lt;li&gt;update targeting system to cause Engine (and the SiteItemService) to load by locale&lt;/li&gt;
-&lt;li&gt;Configure {locale} macro in the form controls when creating new components&lt;/li&gt;
-&lt;li&gt;Maybe: page controller&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Done&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Move content into folders by locale (done)&lt;/li&gt;
-&lt;li&gt;Update engine site config and add targeting block. Select merge. (done)&lt;/li&gt;
-&lt;li&gt;Update left-rail to use locale in navigation (done)&lt;/li&gt;
-&lt;li&gt;Handle old root page
-&lt;ul&gt;
-&lt;li&gt;create global home page content type&lt;/li&gt;
-&lt;li&gt;create instance that welcomes users and lets them select their locale&lt;/li&gt;
-&lt;li&gt;create template&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Questions&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Architecture Notes&lt;/h2&gt;
+&lt;h3&gt;Architecture Notes&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;No native concept of translation
 &lt;ul&gt;
@@ -76,5 +50,33 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</body_html>
+&lt;/ul&gt;
+&lt;h3&gt;Questions&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;br style="font-size: 18.72px;" /&gt;&lt;/h3&gt;
+&lt;h3&gt;To Do&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix main nav to support URLs for pages that don't exist yet&lt;/li&gt;
+&lt;li&gt;restrict access to folders based on editor's role&lt;/li&gt;
+&lt;li&gt;reconfigure sidebar to show locale-specific homes&lt;/li&gt;
+&lt;li&gt;update targeting system to cause Engine (and the SiteItemService) to load by locale&lt;/li&gt;
+&lt;li&gt;Configure {locale} macro in the form controls when creating new components&lt;/li&gt;
+&lt;li&gt;Maybe: page controller&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Done&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Move content into folders by locale (done)&lt;/li&gt;
+&lt;li&gt;Update engine site config and add targeting block. Select merge. (done)&lt;/li&gt;
+&lt;li&gt;Update left-rail to use locale in navigation (done)&lt;/li&gt;
+&lt;li&gt;Handle old root page
+&lt;ul&gt;
+&lt;li&gt;create global home page content type&lt;/li&gt;
+&lt;li&gt;create instance that welcomes users and lets them select their locale&lt;/li&gt;
+&lt;li&gt;create template&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;br /&gt;&lt;/h3&gt;</body_html>
 </page>
