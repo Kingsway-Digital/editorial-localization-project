@@ -1,6 +1,7 @@
-import PageByUrl from "./PageByUrl";
+import PageByUri from "./PageByUri";
 import {Grid} from "@material-ui/core";
 import GlobalHome from "./GlobalHome";
+import ComponentByPath from "./ComponentByPath";
 
 function App() {
 
@@ -13,14 +14,18 @@ function App() {
       <Grid item>
         <GlobalHome/>
 
-        <PageByUrl pageUrl={"/en"}/>
-        <PageByUrl pageUrl={"/en/style"}/>
+        <PageByUri uri={"/en"}/>
+        <PageByUri uri={"/en/style"}/>
 
-        <PageByUrl pageUrl={"/es"}/>
-        <PageByUrl pageUrl={"/es/style"}/>
+        <PageByUri uri={"/es"}/>
+        <PageByUri uri={"/es/style"}/>
 
-        <PageByUrl pageUrl={"/jp"}/>
-        <PageByUrl pageUrl={"/jp/style"}/>
+        <PageByUri uri={"/jp"}/>
+        <PageByUri uri={"/jp/style"}/>
+
+        <ComponentByPath path={"/site/components/en/contacts/contact-widget.xml"} />
+        <ComponentByPath path={"/site/components/es/contacts/contact-widget.xml"} />
+        <ComponentByPath path={"/site/components/jp/contacts/contact-widget.xml"} />
       </Grid>
     </Grid>
   );
