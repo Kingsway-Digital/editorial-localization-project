@@ -554,7 +554,7 @@
 					<properties>
 						<property>
 							<name>repoPath</name>
-							<value>/site/components/headers/</value>
+							<value>/site/components/</value>
 								<type>undefined</type>
 						</property>
 						<property>
@@ -566,6 +566,21 @@
 							<name>type</name>
 							<value></value>
 								<type>undefined</type>
+						</property>
+						<property>
+							<name>enableCreateNew</name>
+							<value>true</value>
+								<type>boolean</type>
+						</property>
+						<property>
+							<name>enableBrowseExisting</name>
+							<value>true</value>
+								<type>boolean</type>
+						</property>
+						<property>
+							<name>enableSearchExisting</name>
+							<value>false</value>
+								<type>boolean</type>
 						</property>
 					</properties>
 				</datasource>
