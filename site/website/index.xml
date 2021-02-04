@@ -13,19 +13,20 @@
 	<folder-name/>
 	<createdDate>2017-1-31T16:18:14.000Z</createdDate>
 	<createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
-	<lastModifiedDate>2021-02-04T18:27:07.609Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-02-04T18:27:07.609Z</lastModifiedDate_dt>
+	<lastModifiedDate>2021-02-04T18:29:46.307Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-02-04T18:29:46.307Z</lastModifiedDate_dt>
 	<title_t>Localization Steps</title_t>
 	<navLabel>GlobalHome</navLabel>
-	<body_html>&lt;h3&gt;To Do&lt;/h3&gt;
+	<body_html>&lt;h2&gt;To Do&lt;/h2&gt;
 &lt;ul&gt;
+&lt;li&gt;Fix main nav to support URLs for pages that don't exist yet&lt;/li&gt;
 &lt;li&gt;restrict access to folders based on editor's role&lt;/li&gt;
 &lt;li&gt;reconfigure sidebar to show locale-specific homes&lt;/li&gt;
 &lt;li&gt;update targeting system to cause Engine (and the SiteItemService) to load by locale&lt;/li&gt;
 &lt;li&gt;Configure {locale} macro in the form controls when creating new components&lt;/li&gt;
 &lt;li&gt;Maybe: page controller&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Done&lt;/h3&gt;
+&lt;h2&gt;Done&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Move content into folders by locale (done)&lt;/li&gt;
 &lt;li&gt;Update engine site config and add targeting block. Select merge. (done)&lt;/li&gt;
@@ -35,6 +36,40 @@
 &lt;li&gt;create global home page content type&lt;/li&gt;
 &lt;li&gt;create instance that welcomes users and lets them select their locale&lt;/li&gt;
 &lt;li&gt;create template&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h2&gt;Architecture Notes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;No native concept of translation
+&lt;ul&gt;
+&lt;li&gt;Content items do not support a native notion of translated content&lt;/li&gt;
+&lt;li&gt;This is ultimately done by linking the translations to the source
+&lt;ul&gt;
+&lt;li&gt;sometimes by designating a language as the source and translations link to the id of the source&lt;/li&gt;
+&lt;li&gt;sometimes by introducing a whole new identifier that is common to both&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;We could take this approach, but we did not&lt;/li&gt;
+&lt;li&gt;This approach relies on the location of content in the content source tree
+&lt;ul&gt;
+&lt;li&gt;The system will look up a translation in the same location as the source, but with a different prefix corresponding to the language
+&lt;ul&gt;
+&lt;li&gt;Current implementation just uses a 2-letter locale code, but you can use full locale codes too.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;So what do you do when the item requested is not present in the desired locale?
+&lt;ul&gt;
+&lt;li&gt;Crafter falls back to a designated language for the site
+&lt;ul&gt;
+&lt;li&gt;e.g. if /jp/style is not present, it will return /en/style&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</body_html>
