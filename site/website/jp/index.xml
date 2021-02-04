@@ -6,10 +6,10 @@
 	<merge-strategy>inherit-levels</merge-strategy>
 	<placeInNav>false</placeInNav>
 	<file-name>index.xml</file-name>
-	<internal-name>Home (Global)</internal-name>
+	<internal-name>Home (jp)</internal-name>
 	<orderDefault_f>-1</orderDefault_f>
 	<objectGroupId>8d7f</objectGroupId>
-	<objectId>8d7f21fa-5e09-00aa-8340-853b7db302da</objectId>
+	<objectId>8d7f21fa-5e09-00aa-8340-853b7db302df</objectId>
 	<folder-name/>
 	<createdDate>2017-1-31T16:18:14.000Z</createdDate>
 	<createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
@@ -24,7 +24,7 @@
 &lt;li&gt;Configure {locale} macro in the form controls when creating new components&lt;/li&gt;
 &lt;li&gt;Maybe: page controller&lt;/li&gt;
 &lt;/ul&gt;</hero_text_html>
-	<hero_title_html>&lt;h1&gt;Localization Setup Info (global)&lt;/h1&gt;</hero_title_html>
+	<hero_title_html>&lt;h1&gt;Localization Setup Info (jp)&lt;/h1&gt;</hero_title_html>
 	<features_o item-list="true">	<item datasource="features" inline="true">	<key>a89386c4-a205-2681-2db1-c3606f714411</key>
 	<value>One</value>
 <component id="a89386c4-a205-2681-2db1-c3606f714411">
