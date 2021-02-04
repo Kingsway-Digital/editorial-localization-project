@@ -140,7 +140,7 @@
 				<field>
 					<type>input</type>
 					<id>title_t</id>
-					<iceId>page</iceId>
+					<iceId></iceId>
 					<title>Title</title>
 					<description></description>
 					<defaultValue></defaultValue>
@@ -183,7 +183,7 @@
 				<field>
 					<type>rte-tinymce5</type>
 					<id>body_html</id>
-					<iceId>page</iceId>
+					<iceId></iceId>
 					<title>Body</title>
 					<description></description>
 					<defaultValue></defaultValue>
@@ -201,7 +201,7 @@
 						</property>
 						<property>
 							<name>autoGrow</name>
-							<value>false</value>
+							<value>true</value>
 							<type>boolean</type>
 						</property>
 						<property>
