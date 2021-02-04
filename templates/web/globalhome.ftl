@@ -12,9 +12,10 @@
     <li><a href="/jp">Japanese</a></li>
 </ul>
 
-<h2 <@studio.iceAttr iceGroup="page"/>>${contentModel.title_t}</h2>
-<section <@studio.iceAttr iceGroup="page"/>>
+<section <@studio.iceAttr />>
+    <h2>${contentModel.title_t}</h2>
     ${contentModel.body_html}
 </section>
+<@studio.toolSupport/>
 </body>
 </html>
