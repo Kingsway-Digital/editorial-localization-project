@@ -1,34 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  ~ Copyright (C) 2007-2020 Crafter Software Corporation. All Rights Reserved.
-  ~
-  ~ This program is free software: you can redistribute it and/or modify
-  ~ it under the terms of the GNU General Public License version 3 as published by
-  ~ the Free Software Foundation.
-  ~
-  ~ This program is distributed in the hope that it will be useful,
-  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
-  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  ~ GNU General Public License for more details.
-  ~
-  ~ You should have received a copy of the GNU General Public License
-  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
-  --><component>
-	<content-type>/component/contact-widget</content-type>	<display-template>/templates/web/components/contact-widget.ftl</display-template>
+<component>
+	<content-type>/component/contact-widget</content-type>
+	<display-template>/templates/web/components/contact-widget.ftl</display-template>
+	<no-template-required/>
 	<merge-strategy>inherit-levels</merge-strategy>
 	<objectGroupId>5224e4d0</objectGroupId>
 	<objectId>5224e4d0-cf56-4fe8-88ef-c2382b9aaf08</objectId>
 	<file-name>contact-widget.xml</file-name>
-	<folder-name>/site/components/es</folder-name>
-	<internal-name>Contact Widget </internal-name>
-	<title_t>Contact Us</title_t>
-	<email_s>info@example.com</email_s>
+	<folder-name/>
+	<internal-name>Contact Widget (es)</internal-name>
+	<title_t>Contact Us (es)</title_t>
+	<email_s>info@example.ar</email_s>
 	<phone_s>(999) 999-9999</phone_s>
-	<text_html>&lt;p&gt;&lt;span&gt;Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.&lt;/span&gt;&lt;/p&gt;</text_html>
+	<text_html>&lt;p&gt;Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.&lt;/p&gt;</text_html>
 	<address>&lt;p&gt;5321 Somewhere Road #789&lt;br /&gt; Reston, Virginia&lt;/p&gt;</address>
 	<createdDate>2017-3-28T21:12:5.000Z</createdDate>
 	<createdDate_dt>2017-3-28T21:12:5.000Z</createdDate_dt>
-	<lastModifiedDate>2017-3-28T21:22:31.000Z</lastModifiedDate>
-	<lastModifiedDate_dt>2017-3-28T21:22:31.000Z</lastModifiedDate_dt>
-	<address_html>&lt;p&gt;5321 Somewhere Road #789&lt;br /&gt;Reston, Virginia&lt;/p&gt;</address_html>
+	<lastModifiedDate>2021-02-04T21:54:07.891Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-02-04T21:54:07.891Z</lastModifiedDate_dt>
+	<address_html>&lt;p&gt;5321 Happy Street&lt;br /&gt;Buenos Aires&lt;/p&gt;</address_html>
+	<disabled>false</disabled>
 </component>
