@@ -13,8 +13,8 @@
 	<folder-name/>
 	<createdDate>2017-1-31T16:18:14.000Z</createdDate>
 	<createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
-	<lastModifiedDate>2021-02-04T23:12:18.187Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-02-04T23:12:18.187Z</lastModifiedDate_dt>
+	<lastModifiedDate>2021-02-04T23:23:33.539Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-02-04T23:23:33.539Z</lastModifiedDate_dt>
 	<title_t>Localization Example</title_t>
 	<navLabel>GlobalHome</navLabel>
 	<body_html>&lt;h2&gt;Steps to Set Up Localization&lt;/h2&gt;
@@ -119,10 +119,10 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;&amp;nbsp;&lt;/h3&gt;
+&lt;h3&gt;&lt;br /&gt;&lt;/h3&gt;
 &lt;h3&gt;To Do&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Fix main nav to support URLs for pages that don't exist yet&lt;/li&gt;
+&lt;li&gt;&lt;span style="color: #e74c3c;"&gt;Fix main nav to support URLs for pages that don't exist yet &lt;strong&gt;(will not fix)&lt;/strong&gt;&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;restrict access to folders based on editor's role&lt;/li&gt;
 &lt;li&gt;reconfigure sidebar to show locale-specific homes&lt;/li&gt;
 &lt;li&gt;update targeting system to cause Engine (and the SiteItemService) to load by locale&lt;/li&gt;
@@ -142,5 +142,8 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;&lt;br /&gt;&lt;/h3&gt;</body_html>
+&lt;h3&gt;Notes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;</body_html>
 </page>
