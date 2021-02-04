@@ -183,7 +183,7 @@
 				<field>
 					<type>rte-tinymce5</type>
 					<id>body_html</id>
-					<iceId></iceId>
+					<iceId>body</iceId>
 					<title>Body</title>
 					<description></description>
 					<defaultValue></defaultValue>
