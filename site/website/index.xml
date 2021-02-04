@@ -13,22 +13,83 @@
 	<folder-name/>
 	<createdDate>2017-1-31T16:18:14.000Z</createdDate>
 	<createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
-	<lastModifiedDate>2021-02-04T21:01:53.642Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-02-04T21:01:53.642Z</lastModifiedDate_dt>
+	<lastModifiedDate>2021-02-04T21:04:02.410Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-02-04T21:04:02.410Z</lastModifiedDate_dt>
 	<title_t>Localization Example</title_t>
 	<navLabel>GlobalHome</navLabel>
 	<body_html>&lt;h2&gt;Steps to Set Up Localization&lt;/h2&gt;
 &lt;h3&gt;Architecture Notes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;No native concept of translation
+&lt;li&gt;Crafter has no native concept of translation
 &lt;ul&gt;
-&lt;li&gt;Content items do not support a native notion of translated content&lt;/li&gt;
+&lt;li&gt;That doesn't mean that it cannot be built employed using standard design patterns&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;What is translation support?
+&lt;ul&gt;
+&lt;li&gt;Content must know its language&lt;/li&gt;
+&lt;li&gt;Content must be able to identify its translations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;This is ultimately done by linking the translations to the source
 &lt;ul&gt;
 &lt;li&gt;sometimes by designating a language as the source and translations link to the id of the source&lt;/li&gt;
 &lt;li&gt;sometimes by introducing a whole new identifier that is common to both&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;This approach:
+&lt;ul&gt;
+&lt;li&gt;Place content in a folder corresponding to its locale&lt;/li&gt;
+&lt;li&gt;Linkage between translations is specified by the path - two files in the same location but with different language folders are translations of one another.
+&lt;ul&gt;
+&lt;li&gt;e.g.
+&lt;ul&gt;
+&lt;li&gt;These two are translations:&amp;nbsp;
+&lt;ul&gt;
+&lt;li&gt;/site/website/&lt;strong&gt;en&lt;/strong&gt;/home/index.xml&lt;/li&gt;
+&lt;li&gt;/site/website/&lt;strong&gt;en&lt;/strong&gt;/home/index.xml&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;So are these:
+&lt;ul&gt;
+&lt;li&gt;/site/website/&lt;strong&gt;en&lt;/strong&gt;/style/hats/index.xml&lt;/li&gt;
+&lt;li&gt;/site/website/&lt;strong&gt;es&lt;/strong&gt;/style/hats/index.xml&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;But these are not:
+&lt;ul&gt;
+&lt;li&gt;/site/website/&lt;strong&gt;en&lt;/strong&gt;/style/&lt;strong&gt;hats&lt;/strong&gt;/index.xml&lt;/li&gt;
+&lt;li&gt;/site/website/&lt;strong&gt;es&lt;/strong&gt;/style/&lt;strong&gt;argentinian-hats&lt;/strong&gt;/index.xml&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;How can this be used?
+&lt;ul&gt;
+&lt;li&gt;Two primary use cases
+&lt;ul&gt;
+&lt;li&gt;Content creation
+&lt;ul&gt;
+&lt;li&gt;I want to create a translation of item A which is in English, into Spanish&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Content lookup
+&lt;ul&gt;
+&lt;li&gt;I want to render an item with a particular path in specific language&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;Only using a 2-letter locale code. We could have used the whole locale code instead.&lt;/li&gt;
+&lt;li&gt;Notes about the current implementation:&lt;/li&gt;
 &lt;li&gt;We could take this approach, but we did not&lt;/li&gt;
 &lt;li&gt;This approach relies on the location of content in the content source tree
 &lt;ul&gt;
