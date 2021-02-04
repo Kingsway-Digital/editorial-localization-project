@@ -13,8 +13,8 @@
 	<folder-name/>
 	<createdDate>2017-1-31T16:18:14.000Z</createdDate>
 	<createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
-	<lastModifiedDate>2021-02-04T23:10:56.022Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-02-04T23:10:56.022Z</lastModifiedDate_dt>
+	<lastModifiedDate>2021-02-04T23:12:18.187Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-02-04T23:12:18.187Z</lastModifiedDate_dt>
 	<title_t>Localization Example</title_t>
 	<navLabel>GlobalHome</navLabel>
 	<body_html>&lt;h2&gt;Steps to Set Up Localization&lt;/h2&gt;
@@ -89,20 +89,37 @@
 &lt;li&gt;As of now, no built-in tools to right-click and choose "translate this", so instead you have to manually create the translation by clicking "copy" on the source item, and then clicking "paste" where you would like the translation created (this is not bad)&lt;/li&gt;
 &lt;li&gt;You have to then manually re-wire relationships in the copied content
 &lt;ul&gt;
-&lt;li&gt;e.g. if an article points to a related item, the related item will keep pointing to the related item in the source language until you create the translation of it &lt;strong&gt;and then manually re-link it&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;e.g. if an article points to a related item, and a translation copy of the article is created, the translated article will keep pointing to the related item in the source language.&amp;nbsp; You will have to create the translation of the related item, and then manually re-link the translated article to the translated item.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;Content Lookup&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;Site Item Service has been taught how to fall back to a default language&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;&lt;br /&gt;&lt;/h3&gt;
-&lt;h3&gt;Questions&lt;/h3&gt;
+&lt;li&gt;Site Item Service has been taught how to fall back to a default language if the requested language is not found
 &lt;ul&gt;
-&lt;li&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Thus, if you request an item /site/website/jp/style/index.xml, but no such page exists, Crafter will automatically return /site/website/en/style/index.xml for you.&lt;/li&gt;
+&lt;li&gt;The same applies when you look up a component - if you request a component by the path of a translation that does not exist, it will return the fallback language for you&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;&lt;br style="font-size: 18.72px;" /&gt;&lt;/h3&gt;
+&lt;/li&gt;
+&lt;li&gt;This works for URLs as well
+&lt;ul&gt;
+&lt;li&gt;URLs are resolved to paths first, so the rules above apply&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;When calling renderComponent (in Freemarker), or when returning flattened nested components, no fallback is applied.
+&lt;ul&gt;
+&lt;li&gt;This could be what you want, or not, depending on your use case&lt;/li&gt;
+&lt;li&gt;If you need to try to render a translation if found, you need to get the path of the nested component, manually change its path to the one you hope to retrieve and then render that component instead (either in freemarker or in react)&lt;/li&gt;
+&lt;li&gt;If you are using react, don't request flattened objects if you plan to look up nested relationships&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Be aware that the default navigation builder and navigation services will return actual pages, not links to&amp;nbsp; pages that "hopefully" exist.&amp;nbsp;
+&lt;ul&gt;
+&lt;li&gt;You may have to manage your nav bar more explicitly in your code.&amp;nbsp;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&amp;nbsp;&lt;/h3&gt;
 &lt;h3&gt;To Do&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Fix main nav to support URLs for pages that don't exist yet&lt;/li&gt;
