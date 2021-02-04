@@ -13,8 +13,8 @@
 	<folder-name/>
 	<createdDate>2017-1-31T16:18:14.000Z</createdDate>
 	<createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
-	<lastModifiedDate>2021-02-04T22:40:36.850Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-02-04T22:40:36.850Z</lastModifiedDate_dt>
+	<lastModifiedDate>2021-02-04T23:05:47.307Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-02-04T23:05:47.307Z</lastModifiedDate_dt>
 	<title_t>Localization Example</title_t>
 	<navLabel>GlobalHome</navLabel>
 	<body_html>&lt;h2&gt;Steps to Set Up Localization&lt;/h2&gt;
@@ -25,7 +25,7 @@
 &lt;li&gt;That doesn't mean that it cannot be built employed using standard design patterns&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;What is translation support?
+&lt;li&gt;What does translation support mean?
 &lt;ul&gt;
 &lt;li&gt;Content must know its language&lt;/li&gt;
 &lt;li&gt;Content must be able to identify its translations&lt;/li&gt;
@@ -33,14 +33,14 @@
 &lt;/li&gt;
 &lt;li&gt;This is ultimately done by linking the translations to the source
 &lt;ul&gt;
-&lt;li&gt;sometimes by designating a language as the source and translations link to the id of the source&lt;/li&gt;
-&lt;li&gt;sometimes by introducing a whole new identifier that is common to both&lt;/li&gt;
+&lt;li&gt;sometimes this is done by designating a particular language as the "source" and translations contain a reference to the source&lt;/li&gt;
+&lt;li&gt;sometimes this is done by introducing a whole new identifier that is common to both the source and the translation(s)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Crafter's approach:
 &lt;ul&gt;
 &lt;li&gt;Place content in a folder corresponding to its locale&lt;/li&gt;
-&lt;li&gt;Linkage between translations is specified by the path - two files in the same location but with different language folders are translations of one another.
+&lt;li&gt;Linkage between translations is defined by the path - two files in the same location but with different language folders are defined as translations of one another(oratleast,dynamiclocalizationsofoneanother)
 &lt;ul&gt;
 &lt;li&gt;e.g.
 &lt;ul&gt;
