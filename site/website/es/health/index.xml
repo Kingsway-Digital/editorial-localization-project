@@ -1,20 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  ~ Copyright (C) 2007-2020 Crafter Software Corporation. All Rights Reserved.
-  ~
-  ~ This program is free software: you can redistribute it and/or modify
-  ~ it under the terms of the GNU General Public License version 3 as published by
-  ~ the Free Software Foundation.
-  ~
-  ~ This program is distributed in the hope that it will be useful,
-  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
-  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  ~ GNU General Public License for more details.
-  ~
-  ~ You should have received a copy of the GNU General Public License
-  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
-  --><page>
-	<content-type>/page/category-landing</content-type>	<display-template>/templates/web/pages/category-landing.ftl</display-template>
+<page>
+	<content-type>/page/category-landing</content-type>
+	<display-template>/templates/web/pages/category-landing.ftl</display-template>
+	<no-template-required/>
 	<merge-strategy>inherit-levels</merge-strategy>
 	<objectGroupId>def257a5</objectGroupId>
 	<objectId>def257a5-def9-4937-a620-42a938e5e1fe</objectId>
@@ -22,15 +10,18 @@
 	<folder-name>health</folder-name>
 	<placeInNav>true</placeInNav>
 	<orderDefault_f>0.0</orderDefault_f>
-	<internal-name>Health </internal-name>
-	<title_t>Health</title_t>
+	<internal-name>Health (es)</internal-name>
+	<title_t>Health (es)</title_t>
 	<header/>
 	<createdDate>2017-3-14T15:21:57.000Z</createdDate>
 	<createdDate_dt>2017-3-14T15:21:57.000Z</createdDate_dt>
-	<lastModifiedDate>2017-3-28T14:30:44.000Z</lastModifiedDate>
-	<lastModifiedDate_dt>2017-3-28T14:30:44.000Z</lastModifiedDate_dt>
+	<lastModifiedDate>2021-02-04T21:49:22.815Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-02-04T21:49:22.815Z</lastModifiedDate_dt>
 	<left-rail/>
 	<category_s>health</category_s>
 	<max_articles_i>10</max_articles_i>
-	<articles_title_t>Health</articles_title_t>
+	<articles_title_t>Health (es)</articles_title_t>
+	<disabled>false</disabled>
+	<header_o item-list="true"/>
+	<left-rail_o item-list="true"/>
 </page>
