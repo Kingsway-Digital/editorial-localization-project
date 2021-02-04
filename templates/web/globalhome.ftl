@@ -22,7 +22,7 @@
                 <h1>${contentModel.title_t}</h1>
             </section>
             <section>
-                <div <@studio.iceAttr />>
+                <div <@studio.iceAttr iceGroup="body" />>
                     ${contentModel.body_html}
                 </div>
             </section>
