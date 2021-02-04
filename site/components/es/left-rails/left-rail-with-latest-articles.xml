@@ -11,11 +11,11 @@
 	<internal-name>Left Rail with Latest Articles (es)</internal-name>
 	<createdDate>2017-3-17T18:23:14.000Z</createdDate>
 	<createdDate_dt>2017-3-17T18:23:14.000Z</createdDate_dt>
-	<lastModifiedDate>2021-02-04T21:38:07.234Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-02-04T21:38:07.234Z</lastModifiedDate_dt>
-	<widgets_o item-list="true">	<item>	<key>/site/components/contacts/contact-widget.xml</key>
-	<value>contact-widget.xml</value>
-	<include>/site/components/contacts/contact-widget.xml</include>
+	<lastModifiedDate>2021-02-04T21:52:54.128Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-02-04T21:52:54.128Z</lastModifiedDate_dt>
+	<widgets_o item-list="true">	<item datasource="components">	<key>/site/components/en/contacts/contact-widget.xml</key>
+	<value>Contact Widget</value>
+	<include>/site/components/en/contacts/contact-widget.xml</include>
 	<disableFlattening>false</disableFlattening>
 	</item>	<item>	<key>/site/components/articles-widget/latest-articles-widget.xml</key>
 	<value>Latest Articles Widget</value>
