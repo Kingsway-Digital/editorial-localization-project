@@ -13,8 +13,8 @@
 	<folder-name/>
 	<createdDate>2017-1-31T16:18:14.000Z</createdDate>
 	<createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
-	<lastModifiedDate>2021-02-04T18:29:46.307Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-02-04T18:29:46.307Z</lastModifiedDate_dt>
+	<lastModifiedDate>2021-02-04T18:49:13.467Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-02-04T18:49:13.467Z</lastModifiedDate_dt>
 	<title_t>Localization Steps</title_t>
 	<navLabel>GlobalHome</navLabel>
 	<body_html>&lt;h2&gt;To Do&lt;/h2&gt;
@@ -39,7 +39,10 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h2&gt;Questions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;nbsp;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2&gt;Architecture Notes&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;No native concept of translation
