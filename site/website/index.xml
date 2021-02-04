@@ -13,8 +13,8 @@
 	<folder-name/>
 	<createdDate>2017-1-31T16:18:14.000Z</createdDate>
 	<createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
-	<lastModifiedDate>2021-02-04T23:05:47.307Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-02-04T23:05:47.307Z</lastModifiedDate_dt>
+	<lastModifiedDate>2021-02-04T23:10:56.022Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-02-04T23:10:56.022Z</lastModifiedDate_dt>
 	<title_t>Localization Example</title_t>
 	<navLabel>GlobalHome</navLabel>
 	<body_html>&lt;h2&gt;Steps to Set Up Localization&lt;/h2&gt;
@@ -40,7 +40,7 @@
 &lt;li&gt;Crafter's approach:
 &lt;ul&gt;
 &lt;li&gt;Place content in a folder corresponding to its locale&lt;/li&gt;
-&lt;li&gt;Linkage between translations is defined by the path - two files in the same location but with different language folders are defined as translations of one another(oratleast,dynamiclocalizationsofoneanother)
+&lt;li&gt;Linkage between translations is defined by the path - two files in the same location but with different language folders are defined as translations of one another (or at least, dynamic localizations of one another)
 &lt;ul&gt;
 &lt;li&gt;e.g.
 &lt;ul&gt;
