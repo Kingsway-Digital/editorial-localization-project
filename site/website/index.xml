@@ -13,18 +13,29 @@
 	<folder-name/>
 	<createdDate>2017-1-31T16:18:14.000Z</createdDate>
 	<createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
-	<lastModifiedDate>2021-02-04T18:20:08.841Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-02-04T18:20:08.841Z</lastModifiedDate_dt>
+	<lastModifiedDate>2021-02-04T18:27:07.609Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-02-04T18:27:07.609Z</lastModifiedDate_dt>
 	<title_t>Localization Steps</title_t>
 	<navLabel>GlobalHome</navLabel>
-	<body_html>&lt;ul&gt;
-&lt;li&gt;Move content into folders by locale (done)&lt;/li&gt;
-&lt;li&gt;Update engine site config and add targeting block. Select merge. (done)&lt;/li&gt;
-&lt;li&gt;Update left-rail to use locale in navigation (done)&lt;/li&gt;
+	<body_html>&lt;h3&gt;To Do&lt;/h3&gt;
+&lt;ul&gt;
 &lt;li&gt;restrict access to folders based on editor's role&lt;/li&gt;
 &lt;li&gt;reconfigure sidebar to show locale-specific homes&lt;/li&gt;
 &lt;li&gt;update targeting system to cause Engine (and the SiteItemService) to load by locale&lt;/li&gt;
 &lt;li&gt;Configure {locale} macro in the form controls when creating new components&lt;/li&gt;
 &lt;li&gt;Maybe: page controller&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Done&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Move content into folders by locale (done)&lt;/li&gt;
+&lt;li&gt;Update engine site config and add targeting block. Select merge. (done)&lt;/li&gt;
+&lt;li&gt;Update left-rail to use locale in navigation (done)&lt;/li&gt;
+&lt;li&gt;Handle old root page
+&lt;ul&gt;
+&lt;li&gt;create global home page content type&lt;/li&gt;
+&lt;li&gt;create instance that welcomes users and lets them select their locale&lt;/li&gt;
+&lt;li&gt;create template&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;</body_html>
 </page>
