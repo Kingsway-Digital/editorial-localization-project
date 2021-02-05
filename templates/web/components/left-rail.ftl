@@ -17,7 +17,7 @@
         <h2>Menu</h2>
       </header>
       <ul>
-        <li><a href="/">Global Home (debug)</a></li>
+        <li><a href="/internal">Globalization Info Home (debug)</a></li>
 		<@nav.renderNavigation "/site/website" 1 true/>
       </ul>
     </nav>
