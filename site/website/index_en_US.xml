@@ -1,267 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <page>
-	<content-type>/page/globalhome</content-type>
-	<display-template>/templates/web/globalhome.ftl</display-template>
+	<content-type>/page/home</content-type>
+	<display-template>/templates/web/pages/home.ftl</display-template>
 	<no-template-required/>
 	<merge-strategy>inherit-levels</merge-strategy>
 	<placeInNav>false</placeInNav>
 	<file-name>index.xml</file-name>
-	<internal-name>Home (Global)</internal-name>
+	<internal-name>Home (en)</internal-name>
 	<orderDefault_f>-1</orderDefault_f>
 	<objectGroupId>8d7f</objectGroupId>
-	<objectId>8d7f21fa-5e09-00aa-8340-853b7db302da</objectId>
-	<folder-name/>
+	<objectId>8d7f21fa-5e09-00aa-8340-853b7db302dd</objectId>
+	<folder-name>en</folder-name>
 	<createdDate>2017-1-31T16:18:14.000Z</createdDate>
 	<createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
-	<lastModifiedDate>2021-02-05T20:02:41.198Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-02-05T20:02:41.198Z</lastModifiedDate_dt>
-	<title_t>Localization Example</title_t>
-	<navLabel>GlobalHome</navLabel>
-	<body_html>&lt;h2&gt;Multi-Lingual Support in Crafter CMS 3&lt;/h2&gt;
-&lt;h3&gt;Architecture&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Crafter Studio 3 has no native concept of translation
-&lt;ul&gt;
-&lt;li&gt;That doesn't mean that it cannot be built employed using standard design patterns!&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;What does translation support mean?
-&lt;ul&gt;
-&lt;li&gt;Content must know its language&lt;/li&gt;
-&lt;li&gt;Content must be able to identify its translations&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;This is ultimately done by linking the translations to the source
-&lt;ul&gt;
-&lt;li&gt;Sometimes this is done by designating a particular language as the "source" and translations contain a reference to the source&lt;/li&gt;
-&lt;li&gt;Sometimes this is done by introducing a whole new identifier that is common to both the source and the translation(s)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Crafter Studio 3's approach:
-&lt;ul&gt;
-&lt;li&gt;Place content in a folder corresponding to its locale&lt;/li&gt;
-&lt;li&gt;Linkage between translations is defined by the path - two files in the same location but with different language folders are defined as translations of one another (or at least, dynamic localizations of one another)
-&lt;ul&gt;
-&lt;li&gt;e.g.
-&lt;ul&gt;
-&lt;li&gt;These two are translations:&amp;nbsp;
-&lt;ul&gt;
-&lt;li&gt;/site/website/&lt;strong&gt;en&lt;/strong&gt;/home/index.xml&lt;/li&gt;
-&lt;li&gt;/site/website/&lt;strong&gt;es&lt;/strong&gt;/home/index.xml&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;So are these:
-&lt;ul&gt;
-&lt;li&gt;/site/website/&lt;strong&gt;en&lt;/strong&gt;/style/hats/index.xml&lt;/li&gt;
-&lt;li&gt;/site/website/&lt;strong&gt;es&lt;/strong&gt;/style/hats/index.xml&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;But these are not:
-&lt;ul&gt;
-&lt;li&gt;/site/website/&lt;strong&gt;en&lt;/strong&gt;/style/&lt;strong&gt;hats&lt;/strong&gt;/index.xml&lt;/li&gt;
-&lt;li&gt;/site/website/&lt;strong&gt;es&lt;/strong&gt;/style/&lt;strong&gt;argentinian-hats&lt;/strong&gt;/index.xml&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;How can this be used?
-&lt;ul&gt;
-&lt;li&gt;Two primary use cases
-&lt;ul&gt;
-&lt;li&gt;Content Management (i.e. Crafter Studio)&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Content Rendering (i.e. Crafter Engine)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;Content Management&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Manage translations completely independently&lt;/li&gt;
-&lt;li&gt;Each content item stands alone - there is no concrete linkage or dependency between content items
-&lt;ul&gt;
-&lt;li&gt;This is clean and simple, avoiding complicated questions&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;There are no built-in tools that will allow you create a "translation" of a content item.
-&lt;ul&gt;
-&lt;li&gt;To create a translation, right-click on the item you wish to translate, and select "copy", and then "paste" the item in the corresponding folder in the desired locale&lt;/li&gt;
-&lt;li&gt;&lt;span style="color: #e74c3c;"&gt;Custom UI plugins can be built to simplify this (e.g. Right-click and select "translate to Spanish", or "view Spanish version")&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Relationships are preserved when copying content
-&lt;ul&gt;
-&lt;li&gt;Depending on your content model, you may wish to re-link related items in the translation.&lt;/li&gt;
-&lt;li&gt;e.g. if an article points to a related item, and a translation copy of the article is created, the translated article will keep pointing to the related item in the source language.&amp;nbsp; You will have to create the translation of the related item, and then manually re-link the translated article to the translated item.&lt;/li&gt;
-&lt;li&gt;&lt;span style="color: #e74c3c;"&gt;Custom UI plugins an be built to 1) show the locale of the related item in the node selector, and 2) rapidly toggle the wired component from one in one language to one in another.&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Content management form components are not aware of locale
-&lt;ul&gt;
-&lt;li&gt;&lt;span style="color: #e74c3c;"&gt;Custom data sources could be constructed to display a subset of "options" based on the locale of the source item, which would prevent users from being able to pick content in the "wrong" language.&lt;/span&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;Content Rendering&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Crafter Engine has a feature that supports advanced item path manipulation
-&lt;ul&gt;
-&lt;li&gt;This can be configured to provide translation fallback support, and it is implemented in the Site Item Service.&lt;/li&gt;
-&lt;li&gt;If the item in the requested language is not available, Crafter will look for the language in the "fallback" language and return it instead.
-&lt;ul&gt;
-&lt;li&gt;Thus, if you request an item /site/website/jp/style/index.xml, but no such page exists, Crafter will automatically return /site/website/en/style/index.xml for you.&lt;/li&gt;
-&lt;li&gt;The same applies when you look up a component - if you request a component by the path of a translation that does not exist, it will return the fallback language for you&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;This works for URLs as well
-&lt;ul&gt;
-&lt;li&gt;URLs are resolved to paths first, so the rules above apply&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;When calling renderComponent (in Freemarker), or when returning flattened nested components, no fallback is applied.
-&lt;ul&gt;
-&lt;li&gt;This could be what you want, or not, depending on your use case&lt;/li&gt;
-&lt;li&gt;If you need to try to render a translation if found, you need to get the path of the nested component, manually change its path to the one you hope to retrieve and then render that component instead (either in freemarker via headless APIs)&lt;/li&gt;
-&lt;li&gt;If you are using headless APIs, don't request flattened objects if you plan to look up nested relationships&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Be aware that the default navigation builder and navigation services will return actual pages, not links to&amp;nbsp; pages that "hopefully" exist.&amp;nbsp;
-&lt;ul&gt;
-&lt;li&gt;You may have to manage your nav bar more explicitly in your code.&amp;nbsp;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Metagenics Global Technical Recommendations&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Based on the proposed architecture, in which:
-&lt;ul&gt;
-&lt;li&gt;The corporate site will be managed in a single site in Crafter&lt;/li&gt;
-&lt;li&gt;Each region can translate parts of the site into their own language&lt;/li&gt;
-&lt;li&gt;If translations aren't available, the content will be rendered in US English&lt;/li&gt;
-&lt;li&gt;Regions can add their own content into the site information architecture that is in their own language that is NOT necessarily translated back into English&lt;/li&gt;
-&lt;li&gt;There is no desire for the system to notify regional users if US English source content updates if the region has translated it.&amp;nbsp; Regional managers will be informed of these types of changes through traditional marketing channels.&lt;/li&gt;
-&lt;li&gt;Site will be rendered via Crafter's headless APIs through a common react app&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Metagenics &lt;span style="text-decoration: underline;"&gt;&lt;em&gt;&lt;strong&gt;can&lt;/strong&gt;&lt;/em&gt;&lt;/span&gt; utilize the architecture proposed cleanly
-&lt;ul&gt;
-&lt;li&gt;Because the primary use case is "translating English content into the local language just once", there is no need for linkage between source items&lt;/li&gt;
-&lt;li&gt;Weak linking between source and translation is not a problem&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;UI customizations to facilitate creating translations should be created
-&lt;ul&gt;
-&lt;li&gt;Data Source for Nodes&lt;/li&gt;
-&lt;li&gt;Node Selector Form Control&lt;/li&gt;
-&lt;li&gt;Right-click on tree to create translation of content item&lt;/li&gt;
-&lt;li&gt;Right-click on tree to view translation of content item&lt;/li&gt;
-&lt;li&gt;Custom sidebar plugin to create a virtual tree showing translated vs non-translated content, with appropriate options&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Metagenics should use a 5-character locale code, corresponding to:
-&lt;ul&gt;
-&lt;li&gt;&amp;lt;language&amp;gt;_&amp;lt;country&amp;gt;&lt;/li&gt;
-&lt;li&gt;en_US&lt;/li&gt;
-&lt;li&gt;es_AR&lt;/li&gt;
-&lt;li&gt;es_ES&lt;/li&gt;
-&lt;li&gt;jp_JP&lt;/li&gt;
-&lt;li&gt;etc.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Extensive UI configuration
-&lt;ul&gt;
-&lt;li&gt;UI should be configured to simplify the authoring experience for regional users
-&lt;ul&gt;
-&lt;li&gt;Recommend creating two types roles
-&lt;ul&gt;
-&lt;li&gt;&amp;lt;region&amp;gt;_author&lt;/li&gt;
-&lt;li&gt;&amp;lt;region&amp;gt;_publisher&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;such that the regional author would only be able to manipulate content pertinent to the region, and the regional&amp;nbsp; publisher would be able to create translations of US English content into the affected regions themselves&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Some specific examples:
-&lt;ul&gt;
-&lt;li&gt;Sidebar tree views filtered by locale, exposed only to regional editors&lt;/li&gt;
-&lt;li&gt;Read-only permission for content outside the region unless the user is an admin&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Tactical UI Customizations / Plugins
-&lt;ul&gt;
-&lt;li&gt;Preferred / If Possible: Virtual Site Map tree, which shows the pages that are currently present in the site plan tree for a given locale. This would render "virtual" pages (e.g. as semi-transparent) to indicate that the English content is applicable here. Virtual pages can have a "translate" function which does the same as "copy" then "paste" in to the path corresponding to the virtual tree being rendered.&amp;nbsp; This code would have to understand the fallback logic.&lt;/li&gt;
-&lt;li&gt;Context menu custom option to translate this into XXX which would bundle "copy" and "paste" into the path corresponding to the option, if no translation exists yet&lt;/li&gt;
-&lt;li&gt;Context menu custom option to view the translation of an item in XXX which would automatically link to a view of the translation in the specified locale.&lt;/li&gt;
-&lt;li&gt;Node selector enhancement to show the locale of the related node&lt;/li&gt;
-&lt;li&gt;Node selector enhancement to "toggle" the linked item for a translation in the language of the containing item&lt;/li&gt;
-&lt;li&gt;Data source that restricts available options to those in the locale of the containing item. This would be most flexible if we could define a macro corresponding to the locale of the containing item (e.g. /site/components/{locale}/widgets/)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"&gt;See React site for some technology demonstrations.&lt;/span&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3&gt;&lt;span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"&gt;Metagenics Global Language Fallback Rules&lt;/span&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"&gt;en&lt;/span&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"&gt;jp_JP&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"&gt;en_SA&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"&gt;en_AU&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"&gt;es_MX&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"&gt;pt_BR&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"&gt;es_AR&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"&gt;zh_CN&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"&gt;en_UK&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"&gt;nl_NL&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"&gt;fr_FR&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"&gt;it_IT&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"&gt;de_DE&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"&gt;en_US&lt;/span&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"&gt;es_US&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"&gt;en_CA&lt;/span&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"&gt;fr_CA&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;&lt;span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"&gt;Modifications Made to Editorial Sample Site&lt;/span&gt;&lt;br /&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Move content into folders by locale&lt;/li&gt;
-&lt;li&gt;Reconfigure sidebar to show locale-specific homes&lt;/li&gt;
-&lt;li&gt;&lt;span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"&gt;Update engine site config and add targeting block. Select merge.&lt;/span&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Update left-rail to use locale in navigation&lt;/li&gt;
-&lt;li&gt;Restrict access to sidebar folders based on the editor's role&lt;/li&gt;
-&lt;li&gt;Update targeting system to cause Engine (and the SiteItemService) to load by locale&lt;/li&gt;
-&lt;li&gt;&lt;span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"&gt;Handle old root page&lt;/span&gt;
-&lt;ul&gt;
-&lt;li&gt;create global home page content type&lt;/li&gt;
-&lt;li&gt;create instance that welcomes users and lets them select their locale&lt;/li&gt;
-&lt;li&gt;create template&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Additional Customization Opportunities&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Rewrite main nav to support URLs for pages that don't exist yet&lt;/li&gt;
-&lt;li&gt;Custom node selector data source that only presents items in the locale of the parent content item, and that also ensures that new items are stored in the correct location&lt;/li&gt;
-&lt;li&gt;Custom node selector form control that displays the locale of the rendered content item.&lt;/li&gt;
-&lt;li&gt;Filter search results by locale&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Notes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;This sample site uses a 2-letter language code. This could be changed for any kind of marker (like an ISO locale code, or otherwise)&lt;/li&gt;
-&lt;/ul&gt;</body_html>
+	<lastModifiedDate>2021-02-04T20:46:20.439Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-02-04T20:46:20.439Z</lastModifiedDate_dt>
+	<title_t>Editorial</title_t>
+	<hero_text_html>&lt;p&gt;Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.&lt;/p&gt;</hero_text_html>
+	<hero_title_html>&lt;h1&gt;Welcome (en)&lt;/h1&gt;</hero_title_html>
+	<features_o item-list="true">	<item datasource="features" inline="true">	<key>a89386c4-a205-2681-2db1-c3606f714411</key>
+	<value>One</value>
+<component id="a89386c4-a205-2681-2db1-c3606f714411">
+	<content-type>/component/feature</content-type>
+	<display-template>/templates/web/components/feature.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>a893</objectGroupId>
+	<objectId>a89386c4-a205-2681-2db1-c3606f714411</objectId>
+	<file-name>a89386c4-a205-2681-2db1-c3606f714411.xml</file-name>
+	<internal-name>One</internal-name>
+	<title_t>One</title_t>
+	<disabled>false</disabled>
+	<icon_s>fa-diamond</icon_s>
+	<body_html>&lt;p&gt;Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.&lt;/p&gt;</body_html>
+	<createdDate>2019-10-11T19:19:53.590Z</createdDate>
+	<createdDate_dt>2019-10-11T19:19:53.590Z</createdDate_dt>
+	<lastModifiedDate>2019-10-11T19:19:53.590Z</lastModifiedDate>
+	<lastModifiedDate_dt>2019-10-11T19:19:53.590Z</lastModifiedDate_dt>
+</component>
+	</item>	<item datasource="features" inline="true">	<key>310b0c87-c3ca-4da0-4aa2-7002a318d7ce</key>
+	<value>Two</value>
+<component id="310b0c87-c3ca-4da0-4aa2-7002a318d7ce">
+	<content-type>/component/feature</content-type>
+	<display-template>/templates/web/components/feature.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>310b</objectGroupId>
+	<objectId>310b0c87-c3ca-4da0-4aa2-7002a318d7ce</objectId>
+	<file-name>310b0c87-c3ca-4da0-4aa2-7002a318d7ce.xml</file-name>
+	<internal-name>Two</internal-name>
+	<title_t>Two</title_t>
+	<disabled>false</disabled>
+	<icon_s>fa-users</icon_s>
+	<body_html>&lt;p&gt;Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.&lt;/p&gt;</body_html>
+	<createdDate>2019-10-11T19:20:07.555Z</createdDate>
+	<createdDate_dt>2019-10-11T19:20:07.555Z</createdDate_dt>
+	<lastModifiedDate>2019-10-11T19:20:07.555Z</lastModifiedDate>
+	<lastModifiedDate_dt>2019-10-11T19:20:07.555Z</lastModifiedDate_dt>
+</component>
+	</item>	<item datasource="features" inline="true">	<key>9f6b80da-21c8-9232-5175-2b1b97db1ed0</key>
+	<value>Three</value>
+<component id="9f6b80da-21c8-9232-5175-2b1b97db1ed0">
+	<content-type>/component/feature</content-type>
+	<display-template>/templates/web/components/feature.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>9f6b</objectGroupId>
+	<objectId>9f6b80da-21c8-9232-5175-2b1b97db1ed0</objectId>
+	<internal-name>Three</internal-name>
+	<title_t>Three</title_t>
+	<disabled>false</disabled>
+	<icon_s>fa-paper-plane</icon_s>
+	<file-name>9f6b80da-21c8-9232-5175-2b1b97db1ed0.xml</file-name>
+	<body_html>&lt;p&gt;Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.&lt;/p&gt;</body_html>
+	<createdDate>2019-10-11T19:20:49.115Z</createdDate>
+	<createdDate_dt>2019-10-11T19:20:49.115Z</createdDate_dt>
+	<lastModifiedDate>2019-10-11T19:20:49.115Z</lastModifiedDate>
+	<lastModifiedDate_dt>2019-10-11T19:20:49.115Z</lastModifiedDate_dt>
+</component>
+	</item>	<item datasource="features" inline="true">	<key>9e93c15d-9473-363b-6179-ce02c1203756</key>
+	<value>Four</value>
+<component id="9e93c15d-9473-363b-6179-ce02c1203756">
+	<content-type>/component/feature</content-type>
+	<display-template>/templates/web/components/feature.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>9e93</objectGroupId>
+	<objectId>9e93c15d-9473-363b-6179-ce02c1203756</objectId>
+	<disabled>false</disabled>
+	<icon_s>fa-gavel</icon_s>
+	<file-name>9e93c15d-9473-363b-6179-ce02c1203756.xml</file-name>
+	<internal-name>Four</internal-name>
+	<title_t>Four</title_t>
+	<body_html>&lt;p&gt;Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.&lt;/p&gt;</body_html>
+	<createdDate>2019-10-11T19:21:00.910Z</createdDate>
+	<createdDate_dt>2019-10-11T19:21:00.910Z</createdDate_dt>
+	<lastModifiedDate>2019-10-11T19:21:00.910Z</lastModifiedDate>
+	<lastModifiedDate_dt>2019-10-11T19:21:00.910Z</lastModifiedDate_dt>
+</component>
+	</item></features_o>
+	<header/>
+	<hero_image_s>/static-assets/images/strawberries.jpg</hero_image_s>
+	<left-rail_o item-list="true">	<item datasource="components-left-rail">	<key>/site/components/en/left-rails/left-rail-with-latest-articles.xml</key>
+	<value>Left Rail with Latest Articles</value>
+	<include>/site/components/en/left-rails/left-rail-with-latest-articles.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item></left-rail_o>
+	<features_title_t>Erat lacinia</features_title_t>
+	<header_o item-list="true"/>
+	<disabled>false</disabled>
 </page>
