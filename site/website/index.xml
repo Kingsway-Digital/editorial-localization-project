@@ -13,8 +13,8 @@
 	<folder-name/>
 	<createdDate>2017-1-31T16:18:14.000Z</createdDate>
 	<createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
-	<lastModifiedDate>2021-02-05T18:36:39.428Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-02-05T18:36:39.428Z</lastModifiedDate_dt>
+	<lastModifiedDate>2021-02-05T18:47:31.704Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-02-05T18:47:31.704Z</lastModifiedDate_dt>
 	<title_t>Localization Example</title_t>
 	<navLabel>GlobalHome</navLabel>
 	<body_html>&lt;h2&gt;Multi-Lingual Support in Crafter CMS 3&lt;/h2&gt;
@@ -137,24 +137,19 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Metagenics Global Recommendations&lt;/h3&gt;
+&lt;h3&gt;Metagenics Global Technical Recommendations&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Based on the proposed architecture, in which:
 &lt;ul&gt;
-&lt;li&gt;The corporate site will haveEach website will be managed in its own site in Crafter CMS&lt;/li&gt;
-&lt;li&gt;New sites will be "cloned" off a particular master site in English&lt;/li&gt;
-&lt;li&gt;Content will be initially all in English&lt;/li&gt;
-&lt;li&gt;"Important" content can be translated into the locale-specific language to provide a better experience for local visitors&lt;/li&gt;
-&lt;li&gt;No synchronization will be done between English content across regional sites
-&lt;ul&gt;
-&lt;li&gt;Changes to translatable content are to be minimal and can be communicated through existing marketing channels&lt;/li&gt;
-&lt;li&gt;Either English content or translated content will be directly updated by region&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
+&lt;li&gt;The corporate site will be managed in a single site in Crafter&lt;/li&gt;
+&lt;li&gt;Each region can translate parts of the site into their own language&lt;/li&gt;
+&lt;li&gt;If translations aren't available, the content will be rendered in US English&lt;/li&gt;
+&lt;li&gt;Regions can add their own content into the site information architecture that is in their own language that is NOT necessarily translated back into English&lt;/li&gt;
+&lt;li&gt;There is no desire for the system to notify regional users if US English source content updates if the region has translated it.&amp;nbsp; Regional managers will be informed of these types of changes through traditional marketing channels.&lt;/li&gt;
 &lt;li&gt;Site will be rendered via Crafter's headless APIs through a common react app&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Metagenics can utilize the architecture proposed cleanly
+&lt;li&gt;Metagenics &lt;span style="text-decoration: underline;"&gt;&lt;em&gt;&lt;strong&gt;can&lt;/strong&gt;&lt;/em&gt;&lt;/span&gt; utilize the architecture proposed cleanly
 &lt;ul&gt;
 &lt;li&gt;Because the primary use case is "translating English content into the local language just once", there is no need for linkage between source items&lt;/li&gt;
 &lt;li&gt;Weak linking between source and translation is not a problem&lt;/li&gt;
@@ -164,6 +159,34 @@
 &lt;ul&gt;
 &lt;li&gt;Data Source for Nodes&lt;/li&gt;
 &lt;li&gt;Node Selector Form Control&lt;/li&gt;
+&lt;li&gt;Right-click on tree to create translation of content item&lt;/li&gt;
+&lt;li&gt;Right-click on tree to view translation of content item&lt;/li&gt;
+&lt;li&gt;Custom sidebar plugin to create a virtual tree showing translated vs non-translated content, with appropriate options&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Extensive UI configuration
+&lt;ul&gt;
+&lt;li&gt;UI should be configured to simplify the authoring experience for regional users
+&lt;ul&gt;
+&lt;li&gt;Recommend creating two types roles
+&lt;ul&gt;
+&lt;li&gt;&amp;lt;region&amp;gt;_author&lt;/li&gt;
+&lt;li&gt;&amp;lt;region&amp;gt;_publisher&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;such that the regional author would only be able to manipulate content pertinent to the region, and the regional&amp;nbsp; publisher would be able to create translations of US English content into the affected regions themselves&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Metagenics should use a 5-character locale code, corresponding to:
+&lt;ul&gt;
+&lt;li&gt;&amp;lt;language&amp;gt;_&amp;lt;country&amp;gt;&lt;/li&gt;
+&lt;li&gt;en_US&lt;/li&gt;
+&lt;li&gt;es_AR&lt;/li&gt;
+&lt;li&gt;es_ES&lt;/li&gt;
+&lt;li&gt;jp_JP&lt;/li&gt;
+&lt;li&gt;etc.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;See React site for some technology demonstrations.&lt;/li&gt;
