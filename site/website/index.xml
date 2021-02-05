@@ -13,8 +13,8 @@
 	<folder-name/>
 	<createdDate>2017-1-31T16:18:14.000Z</createdDate>
 	<createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
-	<lastModifiedDate>2021-02-05T18:47:31.704Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-02-05T18:47:31.704Z</lastModifiedDate_dt>
+	<lastModifiedDate>2021-02-05T19:07:41.936Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-02-05T19:07:41.936Z</lastModifiedDate_dt>
 	<title_t>Localization Example</title_t>
 	<navLabel>GlobalHome</navLabel>
 	<body_html>&lt;h2&gt;Multi-Lingual Support in Crafter CMS 3&lt;/h2&gt;
@@ -164,6 +164,16 @@
 &lt;li&gt;Custom sidebar plugin to create a virtual tree showing translated vs non-translated content, with appropriate options&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;Metagenics should use a 5-character locale code, corresponding to:
+&lt;ul&gt;
+&lt;li&gt;&amp;lt;language&amp;gt;_&amp;lt;country&amp;gt;&lt;/li&gt;
+&lt;li&gt;en_US&lt;/li&gt;
+&lt;li&gt;es_AR&lt;/li&gt;
+&lt;li&gt;es_ES&lt;/li&gt;
+&lt;li&gt;jp_JP&lt;/li&gt;
+&lt;li&gt;etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;Extensive UI configuration
 &lt;ul&gt;
 &lt;li&gt;UI should be configured to simplify the authoring experience for regional users
@@ -177,19 +187,25 @@
 &lt;li&gt;such that the regional author would only be able to manipulate content pertinent to the region, and the regional&amp;nbsp; publisher would be able to create translations of US English content into the affected regions themselves&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Metagenics should use a 5-character locale code, corresponding to:
+&lt;li&gt;Some specific examples:
 &lt;ul&gt;
-&lt;li&gt;&amp;lt;language&amp;gt;_&amp;lt;country&amp;gt;&lt;/li&gt;
-&lt;li&gt;en_US&lt;/li&gt;
-&lt;li&gt;es_AR&lt;/li&gt;
-&lt;li&gt;es_ES&lt;/li&gt;
-&lt;li&gt;jp_JP&lt;/li&gt;
-&lt;li&gt;etc.&lt;/li&gt;
+&lt;li&gt;Sidebar tree views filtered by locale, exposed only to regional editors&lt;/li&gt;
+&lt;li&gt;Read-only permission for content outside the region unless the user is an admin&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;See React site for some technology demonstrations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Tactical UI Customizations / Plugins
+&lt;ul&gt;
+&lt;li&gt;Preferred / If Possible: Virtual Site Map tree, which shows the pages that are currently present in the site plan tree for a given locale. This would render "virtual" pages (e.g. as semi-transparent) to indicate that the English content is applicable here. Virtual pages can have a "translate" function which does the same as "copy" then "paste" in to the path corresponding to the virtual tree being rendered.&amp;nbsp; This code would have to understand the fallback logic.&lt;/li&gt;
+&lt;li&gt;Context menu custom option to translate this into XXX which would bundle "copy" and "paste" into the path corresponding to the option, if no translation exists yet&lt;/li&gt;
+&lt;li&gt;Context menu custom option to view the translation of an item in XXX which would automatically link to a view of the translation in the specified locale.&lt;/li&gt;
+&lt;li&gt;Node selector enhancement to show the locale of the related node&lt;/li&gt;
+&lt;li&gt;Node selector enhancement to "toggle" the linked item for a translation in the language of the containing item&lt;/li&gt;
+&lt;li&gt;Data source that restricts available options to those in the locale of the containing item. This would be most flexible if we could define a macro corresponding to the locale of the containing item (e.g. /site/components/{locale}/widgets/)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"&gt;See React site for some technology demonstrations.&lt;/span&gt;&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;&lt;span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"&gt;Modifications Made to Editorial Sample Site&lt;/span&gt;&lt;br /&gt;&lt;/h3&gt;
 &lt;ul&gt;
