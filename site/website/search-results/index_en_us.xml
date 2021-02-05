@@ -7,19 +7,19 @@
 	<objectGroupId>864c</objectGroupId>
 	<objectId>864c415c-2c0d-77ad-e42e-50f4f5882cb1</objectId>
 	<file-name>index.xml</file-name>
-	<folder-name>search-results</folder-name>
+	<folder-name>index_en_us</folder-name>
 	<internal-name>Search Results (en)</internal-name>
 	<title_t>Search Results (en)</title_t>
 	<header/>
-	<left-rail_o item-list="true">	<item datasource="components-left-rail">	<key>/site/components/en/left-rails/left-rail-with-latest-articles.xml</key>
-	<value>Left Rail with Latest Articles</value>
-	<include>/site/components/en/left-rails/left-rail-with-latest-articles.xml</include>
+	<left-rail_o item-list="true">	<item datasource="components-left-rail">	<key>/site/components/left-rails/left-rail-with-latest-articles_en_us.xml</key>
+	<value>Left Rail with Latest Articles (en)</value>
+	<include>/site/components/left-rails/left-rail-with-latest-articles_en_us.xml</include>
 	<disableFlattening>false</disableFlattening>
 	</item></left-rail_o>
 	<createdDate>2017-3-23T23:47:15.000Z</createdDate>
 	<createdDate_dt>2017-3-23T23:47:15.000Z</createdDate_dt>
-	<lastModifiedDate>2021-02-04T21:46:13.577Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-02-04T21:46:13.577Z</lastModifiedDate_dt>
+	<lastModifiedDate>2021-02-05T21:53:43.570Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-02-05T21:53:43.570Z</lastModifiedDate_dt>
 	<disabled>false</disabled>
 	<categories_o item-list="true">	<item>	<key>/site/taxonomy/categories.xml</key>
 	<value>Categories</value>
