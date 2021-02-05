@@ -13,8 +13,8 @@
 	<folder-name/>
 	<createdDate>2017-1-31T16:18:14.000Z</createdDate>
 	<createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
-	<lastModifiedDate>2021-02-05T16:51:33.948Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-02-05T16:51:33.948Z</lastModifiedDate_dt>
+	<lastModifiedDate>2021-02-05T16:53:26.727Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-02-05T16:53:26.727Z</lastModifiedDate_dt>
 	<title_t>Localization Example</title_t>
 	<navLabel>GlobalHome</navLabel>
 	<body_html>&lt;h2&gt;Multi-Lingual Support in Crafter CMS 3&lt;/h2&gt;
@@ -137,7 +137,37 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;&lt;br /&gt;&lt;/h3&gt;
+&lt;h3&gt;Metagenics Global Recommendations&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Based on the proposed architecture, in which:
+&lt;ul&gt;
+&lt;li&gt;Each website will be managed in its own site in Crafter CMS&lt;/li&gt;
+&lt;li&gt;New sites will be "cloned" off a particular master site in English&lt;/li&gt;
+&lt;li&gt;Content will be initially all in English&lt;/li&gt;
+&lt;li&gt;"Important" content can be translated into the locale-specific language to provide a better experience for local visitors&lt;/li&gt;
+&lt;li&gt;No synchronization will be done between English content across regional sites
+&lt;ul&gt;
+&lt;li&gt;Changes to translatable content are to be minimal and can be communicated through existing marketing channels&lt;/li&gt;
+&lt;li&gt;Either English content or translated content will be directly updated by region&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Site will be rendered via Crafter's headless APIs through a common react app&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Metagenics can utilize the architecture proposed cleanly
+&lt;ul&gt;
+&lt;li&gt;Because the primary use case is "translating English content into the local language just once", there is no need for linkage between source items&lt;/li&gt;
+&lt;li&gt;Weak linking between source and translation is not a problem&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;UI customizations to facilitate creating translations should be created
+&lt;ul&gt;
+&lt;li&gt;Data Source for Nodes&lt;/li&gt;
+&lt;li&gt;Node Selector Form Control&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;See React site for some technology demonstrations.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3&gt;&lt;span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"&gt;Modifications Made to Editorial Sample Site&lt;/span&gt;&lt;br /&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Move content into folders by locale&lt;/li&gt;
