@@ -6,17 +6,17 @@
 	<merge-strategy>inherit-levels</merge-strategy>
 	<objectGroupId>d210</objectGroupId>
 	<objectId>d210349e-3f77-95c1-37b3-cab10816347f</objectId>
-	<file-name>crafter-level-descriptor.level.xml</file-name>
+	<file-name>crafter-level-descriptor.level_en_us.xml</file-name>
 	<folder-name/>
 	<header/>
-	<left-rail_o item-list="true">	<item datasource="components-left-rail">	<key>/site/components/en/left-rails/left-rail-with-latest-articles.xml</key>
-	<value>Left Rail with Latest Articles</value>
-	<include>/site/components/en/left-rails/left-rail-with-latest-articles.xml</include>
+	<left-rail_o item-list="true">	<item datasource="components-left-rail">	<key>/site/components/left-rails/left-rail-with-latest-articles_en_us.xml</key>
+	<value>Left Rail with Latest Articles (en)</value>
+	<include>/site/components/left-rails/left-rail-with-latest-articles_en_us.xml</include>
 	<disableFlattening>false</disableFlattening>
 	</item></left-rail_o>
 	<createdDate>2017-3-17T18:56:59.000Z</createdDate>
 	<createdDate_dt>2017-3-17T18:56:59.000Z</createdDate_dt>
-	<lastModifiedDate>2021-02-04T21:46:57.800Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-02-04T21:46:57.800Z</lastModifiedDate_dt>
+	<lastModifiedDate>2021-02-05T21:49:17.206Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-02-05T21:49:17.206Z</lastModifiedDate_dt>
 	<header_o item-list="true"/>
 </component>
