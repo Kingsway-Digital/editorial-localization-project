@@ -6,20 +6,20 @@
 	<merge-strategy>inherit-levels</merge-strategy>
 	<objectGroupId>458a</objectGroupId>
 	<objectId>458af2ea-368d-9167-0233-b1d346f5baaa</objectId>
-	<file-name>left-rail-with-latest-articles.xml</file-name>
+	<file-name>left-rail-with-latest-articles_en_us.xml</file-name>
 	<folder-name/>
 	<internal-name>Left Rail with Latest Articles (en)</internal-name>
 	<createdDate>2017-3-17T18:23:14.000Z</createdDate>
 	<createdDate_dt>2017-3-17T18:23:14.000Z</createdDate_dt>
-	<lastModifiedDate>2021-02-04T21:51:08.463Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-02-04T21:51:08.463Z</lastModifiedDate_dt>
-	<widgets_o item-list="true">	<item>	<key>/site/components/articles-widget/latest-articles-widget.xml</key>
+	<lastModifiedDate>2021-02-05T21:56:29.649Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-02-05T21:56:29.649Z</lastModifiedDate_dt>
+	<widgets_o item-list="true">	<item datasource="components">	<key>/site/components/articles-widget/latest-articles-widget_en_us.xml</key>
 	<value>Latest Articles Widget</value>
-	<include>/site/components/articles-widget/latest-articles-widget.xml</include>
+	<include>/site/components/articles-widget/latest-articles-widget_en_us.xml</include>
 	<disableFlattening>false</disableFlattening>
-	</item>	<item datasource="components">	<key>/site/components/en/contacts/contact-widget.xml</key>
-	<value>Contact Widget</value>
-	<include>/site/components/en/contacts/contact-widget.xml</include>
+	</item>	<item datasource="components">	<key>/site/components/contacts/contact-widget_en_us.xml</key>
+	<value>Contact Widget (en)</value>
+	<include>/site/components/contacts/contact-widget_en_us.xml</include>
 	<disableFlattening>false</disableFlattening>
 	</item></widgets_o>
 	<disabled>false</disabled>
