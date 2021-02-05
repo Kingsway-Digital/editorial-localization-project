@@ -6,20 +6,20 @@
 	<merge-strategy>inherit-levels</merge-strategy>
 	<objectGroupId>d4845029</objectGroupId>
 	<objectId>d4845029-8e32-4a06-ba6b-57f594dc6aea</objectId>
-	<file-name>left-rail-with-latest-articles.xml</file-name>
+	<file-name>left-rail-with-latest-articles_es_ar.xml</file-name>
 	<folder-name/>
 	<internal-name>Left Rail with Latest Articles (es)</internal-name>
 	<createdDate>2017-3-17T18:23:14.000Z</createdDate>
 	<createdDate_dt>2017-3-17T18:23:14.000Z</createdDate_dt>
-	<lastModifiedDate>2021-02-04T21:52:54.128Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-02-04T21:52:54.128Z</lastModifiedDate_dt>
-	<widgets_o item-list="true">	<item datasource="components">	<key>/site/components/en/contacts/contact-widget.xml</key>
-	<value>Contact Widget</value>
-	<include>/site/components/en/contacts/contact-widget.xml</include>
-	<disableFlattening>false</disableFlattening>
-	</item>	<item>	<key>/site/components/articles-widget/latest-articles-widget.xml</key>
+	<lastModifiedDate>2021-02-05T21:57:43.953Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-02-05T21:57:43.953Z</lastModifiedDate_dt>
+	<widgets_o item-list="true">	<item datasource="components">	<key>/site/components/articles-widget/latest-articles-widget_en_us.xml</key>
 	<value>Latest Articles Widget</value>
-	<include>/site/components/articles-widget/latest-articles-widget.xml</include>
+	<include>/site/components/articles-widget/latest-articles-widget_en_us.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item>	<item datasource="components">	<key>/site/components/contacts/contact-widget_es_ar.xml</key>
+	<value>Contact Widget (es)</value>
+	<include>/site/components/contacts/contact-widget_es_ar.xml</include>
 	<disableFlattening>false</disableFlattening>
 	</item></widgets_o>
 	<disabled>false</disabled>
