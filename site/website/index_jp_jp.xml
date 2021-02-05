@@ -10,11 +10,11 @@
 	<orderDefault_f>-1</orderDefault_f>
 	<objectGroupId>8d7f</objectGroupId>
 	<objectId>8d7f21fa-5e09-00aa-8340-853b7db302df</objectId>
-	<folder-name>jp</folder-name>
+	<folder-name>index_jp_jp</folder-name>
 	<createdDate>2017-1-31T16:18:14.000Z</createdDate>
 	<createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
-	<lastModifiedDate>2021-02-04T21:50:09.100Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-02-04T21:50:09.100Z</lastModifiedDate_dt>
+	<lastModifiedDate>2021-02-05T21:44:13.238Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-02-05T21:44:13.238Z</lastModifiedDate_dt>
 	<title_t>Editorial (jp)</title_t>
 	<hero_text_html>&lt;p&gt;Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.&lt;/p&gt;</hero_text_html>
 	<hero_title_html>&lt;h1&gt;Welcome! (jp)&lt;/h1&gt;</hero_title_html>
@@ -101,9 +101,9 @@
 	</item></features_o>
 	<header/>
 	<hero_image_s>/static-assets/images/strawberries.jpg</hero_image_s>
-	<left-rail_o item-list="true">	<item datasource="components-left-rail">	<key>/site/components/en/left-rails/left-rail-with-latest-articles.xml</key>
-	<value>Left Rail with Latest Articles</value>
-	<include>/site/components/en/left-rails/left-rail-with-latest-articles.xml</include>
+	<left-rail_o item-list="true">	<item datasource="components-left-rail">	<key>/site/components/left-rails/left-rail-with-latest-articles_en_us.xml</key>
+	<value>Left Rail with Latest Articles (en)</value>
+	<include>/site/components/left-rails/left-rail-with-latest-articles_en_us.xml</include>
 	<disableFlattening>false</disableFlattening>
 	</item></left-rail_o>
 	<features_title_t>Erat lacinia</features_title_t>
