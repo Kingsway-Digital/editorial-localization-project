@@ -4,6 +4,7 @@ import {map} from "rxjs/operators";
 import {getItem, parseDescriptor} from "@craftercms/content";
 import Loading from "./Loading";
 import ComponentByPathAndPreferredLocale from "./ComponentByPathAndPreferredLocale";
+import {localeFromPath} from "./util";
 
 function ComponentByPath(props) {
   const {
@@ -26,7 +27,7 @@ function ComponentByPath(props) {
 
   if (!data) return <Loading msg={"component by path " + path}/>
   else {
-    const preferredLocale = path.startsWith("/site/website/") ? path.substring(14,16) : null
+    const preferredLocale = localeFromPath(path)
     const lro = data['left-rail_o']
     let lr = undefined;
     if (lro!== undefined) {
@@ -35,8 +36,9 @@ function ComponentByPath(props) {
     const highlight = path !== data.craftercms.path
     return <div style={{marginBottom: 15, padding: 15}}>
       <Typography variant={"h4"}>{data.craftercms.label}</Typography>
-      <Typography variant={"h5"} color={highlight?"secondary":"inherit"}>Requested: {path}</Typography>
-      <Typography variant={"h5"} color={highlight?"secondary":"inherit"}>Returned:   {data.craftercms.path}</Typography>
+      {highlight?<Typography variant={"h5"} color={"secondary"}>Item not found in requested locale - falling back.</Typography>:""}
+      <Typography variant={"h5"}>Requested: {path}</Typography>
+      <Typography variant={"h5"}>Returned:   {data.craftercms.path}</Typography>
       <Typography variant={"h5"}>Content Type: {data.craftercms.contentTypeId}</Typography>
       <Typography variant={"body2"}><strong>Entire Object:</strong> {JSON.stringify(data)}</Typography>
       <ComponentByPathAndPreferredLocale path={lr?.craftercms.path} locale={preferredLocale} />

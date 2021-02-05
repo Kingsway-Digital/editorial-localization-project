@@ -1,16 +1,18 @@
 import React from 'react'
 import ComponentByPath from "./ComponentByPath";
 import {Typography} from "@material-ui/core";
+import {overrideLocale} from "./util";
 
 function ComponentByPathAndPreferredLocale(props) {
   const {
     path,
     locale
   } = props
-// /site/components/en/left-rails/left-rail-with-no-articles.xml
+
   if (!path) return null;
-  if (!path.startsWith("/site/components/")) return null;
-  const overridePath = path.substring(0,17) + locale + path.substring(19)
+
+  const overridePath = overrideLocale(path, locale)
+
   if (overridePath !== path) {
     return <>
       <Typography variant={"h5"} color={"primary"}>
