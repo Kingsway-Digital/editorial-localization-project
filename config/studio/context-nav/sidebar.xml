@@ -132,8 +132,6 @@
 										<onClick>preview</onClick>
                         				<roles>
                         					<role>en_author</role>
-                        					<role>admin</role>
-                        					<role>developer</role>
                         				</roles>
 									</params>
 								</modulehook>
@@ -146,8 +144,6 @@
 										<onClick>preview</onClick>
                         				<roles>
                         					<role>es_author</role>
-                        					<role>admin</role>
-                        					<role>developer</role>
                         				</roles>
 									</params>
 								</modulehook>
@@ -160,8 +156,6 @@
 										<onClick>preview</onClick>
                         				<roles>
                         					<role>jp_author</role>
-                        					<role>admin</role>
-                        					<role>developer</role>
                         				</roles>
 									</params>
 								</modulehook>
