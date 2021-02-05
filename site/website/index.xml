@@ -13,16 +13,16 @@
 	<folder-name/>
 	<createdDate>2017-1-31T16:18:14.000Z</createdDate>
 	<createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
-	<lastModifiedDate>2021-02-04T23:26:06.513Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-02-04T23:26:06.513Z</lastModifiedDate_dt>
+	<lastModifiedDate>2021-02-05T16:25:19.996Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-02-05T16:25:19.996Z</lastModifiedDate_dt>
 	<title_t>Localization Example</title_t>
 	<navLabel>GlobalHome</navLabel>
-	<body_html>&lt;h2&gt;Steps to Set Up Localization&lt;/h2&gt;
+	<body_html>&lt;h2&gt;Multi-Lingual Support in Crafter CMS 3&lt;/h2&gt;
 &lt;h3&gt;Architecture Notes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Crafter has no native concept of translation
+&lt;li&gt;Crafter Studio 3 has no native concept of translation
 &lt;ul&gt;
-&lt;li&gt;That doesn't mean that it cannot be built employed using standard design patterns&lt;/li&gt;
+&lt;li&gt;That doesn't mean that it cannot be built employed using standard design patterns!&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;What does translation support mean?
@@ -33,11 +33,11 @@
 &lt;/li&gt;
 &lt;li&gt;This is ultimately done by linking the translations to the source
 &lt;ul&gt;
-&lt;li&gt;sometimes this is done by designating a particular language as the "source" and translations contain a reference to the source&lt;/li&gt;
-&lt;li&gt;sometimes this is done by introducing a whole new identifier that is common to both the source and the translation(s)&lt;/li&gt;
+&lt;li&gt;Sometimes this is done by designating a particular language as the "source" and translations contain a reference to the source&lt;/li&gt;
+&lt;li&gt;Sometimes this is done by introducing a whole new identifier that is common to both the source and the translation(s)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Crafter's approach:
+&lt;li&gt;Crafter Studio 3's approach:
 &lt;ul&gt;
 &lt;li&gt;Place content in a folder corresponding to its locale&lt;/li&gt;
 &lt;li&gt;Linkage between translations is defined by the path - two files in the same location but with different language folders are defined as translations of one another (or at least, dynamic localizations of one another)
@@ -72,30 +72,37 @@
 &lt;ul&gt;
 &lt;li&gt;Two primary use cases
 &lt;ul&gt;
-&lt;li&gt;Content creation&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Content lookup&lt;/li&gt;
+&lt;li&gt;Content Management&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Content Rendering&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Notes about the current implementation:
+&lt;/ul&gt;
+&lt;h4&gt;Content Management&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;Only using a 2-letter locale code. We could have used the whole locale code instead.&lt;/li&gt;
+&lt;li&gt;Manage translations completely independently&lt;/li&gt;
+&lt;li&gt;Each content item stands alone - there is no concrete linkage or dependency between content items
+&lt;ul&gt;
+&lt;li&gt;This is clean and simple, avoiding complicated questions&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;There are no built-in tools that will allow you create a "translation" of a content item.
+&lt;ul&gt;
+&lt;li&gt;To create a translation, right-click on the item you wish to translate, and select "copy", and then "paste" the item in the corresponding folder in the desired locale&lt;/li&gt;
+&lt;li&gt;Custom UI plugins can be built to simplify this (e.g. Right-click and select "translate to Spanish", or "view Spanish version")&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4&gt;Content Creation&lt;/h4&gt;
+&lt;/li&gt;
+&lt;li&gt;Relationships are preserved when copying content
 &lt;ul&gt;
-&lt;li&gt;As of now, no built-in tools to right-click and choose "translate this", so instead you have to manually create the translation by clicking "copy" on the source item, and then clicking "paste" where you would like the translation created (this is not bad)&lt;/li&gt;
-&lt;li&gt;You have to then manually re-wire relationships in the copied content
-&lt;ul&gt;
+&lt;li&gt;Depending on your content model, you may wish to re-link related items in the translation.&lt;/li&gt;
 &lt;li&gt;e.g. if an article points to a related item, and a translation copy of the article is created, the translated article will keep pointing to the related item in the source language.&amp;nbsp; You will have to create the translation of the related item, and then manually re-link the translated article to the translated item.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4&gt;Content Lookup&lt;/h4&gt;
+&lt;h4&gt;Content Rendering&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;Site Item Service has been taught how to fall back to a default language if the requested language is not found
+&lt;li&gt;The Site Item Service has been taught how to fall back to a default language if the requested language is not found
 &lt;ul&gt;
 &lt;li&gt;Thus, if you request an item /site/website/jp/style/index.xml, but no such page exists, Crafter will automatically return /site/website/en/style/index.xml for you.&lt;/li&gt;
 &lt;li&gt;The same applies when you look up a component - if you request a component by the path of a translation that does not exist, it will return the fallback language for you&lt;/li&gt;
@@ -144,6 +151,6 @@
 &lt;/ul&gt;
 &lt;h3&gt;Notes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;This sample site uses a 2-letter language code. This could be changed for any kind of marker (like an ISO locale code, or otherwise)&lt;/li&gt;
 &lt;/ul&gt;</body_html>
 </page>
