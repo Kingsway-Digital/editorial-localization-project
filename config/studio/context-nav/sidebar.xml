@@ -108,7 +108,7 @@
 								<modulehook>
 									<name>wcm-root-folder</name>									
 									<params>
-										<label>Pages (global)</label>
+										<label>Pages</label>
 										<path>/site/website</path>
 										<showRootItem>true</showRootItem>
 										<onClick>preview</onClick>
