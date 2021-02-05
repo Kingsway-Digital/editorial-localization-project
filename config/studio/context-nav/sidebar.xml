@@ -130,6 +130,9 @@
 										<path>/site/website/jp</path>
 										<showRootItem>true</showRootItem>
 										<onClick>preview</onClick>
+				<roles>
+					<role>jp_author</role>
+				</roles>
 									</params>
 								</modulehook>
 
