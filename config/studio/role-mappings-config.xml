@@ -60,6 +60,15 @@
         <group name="site_author">
             <role>author</role>
         </group>
+        <group name="en_author">
+            <role>en_author</role>
+        </group>
+        <group name="es_author">
+            <role>es_author</role>
+        </group>
+        <group name="jp_author">
+            <role>jp_uthor</role>
+        </group>
         <group name="site_publisher">
             <role>publisher</role>
         </group>
