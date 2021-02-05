@@ -67,7 +67,7 @@
             <role>es_author</role>
         </group>
         <group name="jp_author">
-            <role>jp_uthor</role>
+            <role>jp_author</role>
         </group>
         <group name="site_publisher">
             <role>publisher</role>
