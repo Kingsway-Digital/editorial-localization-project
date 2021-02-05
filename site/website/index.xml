@@ -13,8 +13,8 @@
 	<folder-name/>
 	<createdDate>2017-1-31T16:18:14.000Z</createdDate>
 	<createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
-	<lastModifiedDate>2021-02-05T16:25:19.996Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-02-05T16:25:19.996Z</lastModifiedDate_dt>
+	<lastModifiedDate>2021-02-05T16:36:09.036Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-02-05T16:36:09.036Z</lastModifiedDate_dt>
 	<title_t>Localization Example</title_t>
 	<navLabel>GlobalHome</navLabel>
 	<body_html>&lt;h2&gt;Multi-Lingual Support in Crafter CMS 3&lt;/h2&gt;
@@ -72,8 +72,8 @@
 &lt;ul&gt;
 &lt;li&gt;Two primary use cases
 &lt;ul&gt;
-&lt;li&gt;Content Management&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Content Rendering&lt;/li&gt;
+&lt;li&gt;Content Management (i.e. Crafter Studio)&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Content Rendering (i.e. Crafter Engine)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -97,6 +97,12 @@
 &lt;ul&gt;
 &lt;li&gt;Depending on your content model, you may wish to re-link related items in the translation.&lt;/li&gt;
 &lt;li&gt;e.g. if an article points to a related item, and a translation copy of the article is created, the translated article will keep pointing to the related item in the source language.&amp;nbsp; You will have to create the translation of the related item, and then manually re-link the translated article to the translated item.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Content management form components are not aware of locale
+&lt;ul&gt;
+&lt;li&gt;Custom data sources could be constructed to display a subset of "options" based on the locale of the source item&lt;/li&gt;
+&lt;li&gt;Custom form controls (specifically the node selector) could indicate the locale of the related content item.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
