@@ -13,8 +13,8 @@
 	<folder-name/>
 	<createdDate>2017-1-31T16:18:14.000Z</createdDate>
 	<createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
-	<lastModifiedDate>2021-02-05T17:15:26.373Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-02-05T17:15:26.373Z</lastModifiedDate_dt>
+	<lastModifiedDate>2021-02-05T18:30:01.309Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-02-05T18:30:01.309Z</lastModifiedDate_dt>
 	<title_t>Localization Example</title_t>
 	<navLabel>GlobalHome</navLabel>
 	<body_html>&lt;h2&gt;Multi-Lingual Support in Crafter CMS 3&lt;/h2&gt;
@@ -47,7 +47,7 @@
 &lt;li&gt;These two are translations:&amp;nbsp;
 &lt;ul&gt;
 &lt;li&gt;/site/website/&lt;strong&gt;en&lt;/strong&gt;/home/index.xml&lt;/li&gt;
-&lt;li&gt;/site/website/&lt;strong&gt;en&lt;/strong&gt;/home/index.xml&lt;/li&gt;
+&lt;li&gt;/site/website/&lt;strong&gt;es&lt;/strong&gt;/home/index.xml&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;So are these:
