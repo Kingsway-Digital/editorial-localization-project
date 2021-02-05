@@ -13,12 +13,12 @@
 	<folder-name/>
 	<createdDate>2017-1-31T16:18:14.000Z</createdDate>
 	<createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
-	<lastModifiedDate>2021-02-05T16:53:26.727Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-02-05T16:53:26.727Z</lastModifiedDate_dt>
+	<lastModifiedDate>2021-02-05T17:15:26.373Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-02-05T17:15:26.373Z</lastModifiedDate_dt>
 	<title_t>Localization Example</title_t>
 	<navLabel>GlobalHome</navLabel>
 	<body_html>&lt;h2&gt;Multi-Lingual Support in Crafter CMS 3&lt;/h2&gt;
-&lt;h3&gt;Architecture Notes&lt;/h3&gt;
+&lt;h3&gt;Architecture&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Crafter Studio 3 has no native concept of translation
 &lt;ul&gt;
