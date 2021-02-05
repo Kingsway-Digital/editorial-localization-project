@@ -108,10 +108,29 @@
 								<modulehook>
 									<name>wcm-root-folder</name>									
 									<params>
+										<label>Pages (global)</label>
+										<path>/site/website</path>
+										<showRootItem>true</showRootItem>
+										<onClick>preview</onClick>
+                                        <icon>
+                                            <styles>
+                                                <color>#ff0000</color>
+                                            </styles>
+                                        </icon>
+									</params>
+								</modulehook>
+								<modulehook>
+									<name>wcm-root-folder</name>									
+									<params>
 										<label>Pages (en)</label>
 										<path>/site/website/en</path>
 										<showRootItem>true</showRootItem>
 										<onClick>preview</onClick>
+				<roles>
+					<role>en_author</role>
+					<role>admin</role>
+					<role>developer</role>
+				</roles>
 									</params>
 								</modulehook>
 								<modulehook>
@@ -121,6 +140,11 @@
 										<path>/site/website/es</path>
 										<showRootItem>true</showRootItem>
 										<onClick>preview</onClick>
+				<roles>
+					<role>es_author</role>
+					<role>admin</role>
+					<role>developer</role>
+				</roles>
 									</params>
 								</modulehook>
 								<modulehook>
@@ -132,6 +156,8 @@
 										<onClick>preview</onClick>
 				<roles>
 					<role>jp_author</role>
+					<role>admin</role>
+					<role>developer</role>
 				</roles>
 									</params>
 								</modulehook>
@@ -175,6 +201,11 @@
 										<path>/templates</path>
 										<showRootItem>true</showRootItem>
 										<onClick>none</onClick>
+                                        <icon>
+                                            <styles>
+                                                <color>#ff0000</color>
+                                            </styles>
+                                        </icon>
 									</params>
 								</modulehook>
 
@@ -186,6 +217,11 @@
 										<path>/scripts</path>
 										<showRootItem>true</showRootItem>
 										<onClick>none</onClick>
+                                        <icon>
+                                            <styles>
+                                                <color>#ff0000</color>
+                                            </styles>
+                                        </icon>
 									</params>
 								</modulehook>
 
@@ -199,15 +235,11 @@
 										</roles>
 										<label>Site Config</label>
 										<path>/site-config</path>
-									</params>
-								</modulehook>
-								<modulehook>
-									<name>wcm-root-folder</name>									
-									<params>
-										<label>Pages (global)</label>
-										<path>/site/website</path>
-										<showRootItem>true</showRootItem>
-										<onClick>preview</onClick>
+                                        <icon>
+                                            <styles>
+                                                <color>#ff0000</color>
+                                            </styles>
+                                        </icon>
 									</params>
 								</modulehook>
 							</modulehooks>
