@@ -5,7 +5,7 @@
 	<no-template-required/>
 	<merge-strategy>inherit-levels</merge-strategy>
 	<placeInNav>false</placeInNav>
-	<file-name>crafter-level-descriptor.level_en_us.xml</file-name>
+	<file-name>crafter-level-descriptor.level.xml</file-name>
 	<objectGroupId>e39433c0</objectGroupId>
 	<objectId>e39433c0-5eda-4abd-b96c-12784a661e23</objectId>
 	<folder-name/>
@@ -16,10 +16,10 @@
 	</item></header_o>
 	<createdDate>2017-3-13T20:26:50.000Z</createdDate>
 	<createdDate_dt>2017-3-13T20:26:50.000Z</createdDate_dt>
-	<lastModifiedDate>2021-02-05T21:24:55.521Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-02-05T21:24:55.521Z</lastModifiedDate_dt>
+	<lastModifiedDate>2021-02-04T20:39:12.250Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-02-04T20:39:12.250Z</lastModifiedDate_dt>
 	<left-rail_o item-list="true">	<item datasource="components-left-rail">	<key>/site/components/en/left-rails/left-rail-with-no-articles.xml</key>
-	<value>Left Rail with No Articles (en)</value>
+	<value>Left Rail with No Articles</value>
 	<include>/site/components/en/left-rails/left-rail-with-no-articles.xml</include>
 	<disableFlattening>false</disableFlattening>
 	</item></left-rail_o>
