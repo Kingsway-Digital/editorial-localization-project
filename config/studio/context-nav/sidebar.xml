@@ -117,10 +117,10 @@
                                                 <color>#ff0000</color>
                                             </styles>
                                         </icon>
-				<roles>
-					<role>admin</role>
-					<role>developer</role>
-				</roles>
+                        				<roles>
+                        					<role>admin</role>
+                        					<role>developer</role>
+                        				</roles>
 									</params>
 								</modulehook>
 								<modulehook>
@@ -130,11 +130,11 @@
 										<path>/site/website/en</path>
 										<showRootItem>true</showRootItem>
 										<onClick>preview</onClick>
-				<roles>
-					<role>en_author</role>
-					<role>admin</role>
-					<role>developer</role>
-				</roles>
+                        				<roles>
+                        					<role>en_author</role>
+                        					<role>admin</role>
+                        					<role>developer</role>
+                        				</roles>
 									</params>
 								</modulehook>
 								<modulehook>
@@ -144,11 +144,11 @@
 										<path>/site/website/es</path>
 										<showRootItem>true</showRootItem>
 										<onClick>preview</onClick>
-				<roles>
-					<role>es_author</role>
-					<role>admin</role>
-					<role>developer</role>
-				</roles>
+                        				<roles>
+                        					<role>es_author</role>
+                        					<role>admin</role>
+                        					<role>developer</role>
+                        				</roles>
 									</params>
 								</modulehook>
 								<modulehook>
@@ -158,11 +158,11 @@
 										<path>/site/website/jp</path>
 										<showRootItem>true</showRootItem>
 										<onClick>preview</onClick>
-				<roles>
-					<role>jp_author</role>
-					<role>admin</role>
-					<role>developer</role>
-				</roles>
+                        				<roles>
+                        					<role>jp_author</role>
+                        					<role>admin</role>
+                        					<role>developer</role>
+                        				</roles>
 									</params>
 								</modulehook>
 
@@ -210,10 +210,10 @@
                                                 <color>#ff0000</color>
                                             </styles>
                                         </icon>
-				<roles>
-					<role>admin</role>
-					<role>developer</role>
-				</roles>
+                        				<roles>
+                        					<role>admin</role>
+                        					<role>developer</role>
+                        				</roles>
 									</params>
 								</modulehook>
 
@@ -230,10 +230,10 @@
                                                 <color>#ff0000</color>
                                             </styles>
                                         </icon>
-				<roles>
-					<role>admin</role>
-					<role>developer</role>
-				</roles>
+                        				<roles>
+                        					<role>admin</role>
+                        					<role>developer</role>
+                        				</roles>
 									</params>
 								</modulehook>
 
@@ -252,10 +252,6 @@
                                                 <color>#ff0000</color>
                                             </styles>
                                         </icon>
-				<roles>
-					<role>admin</role>
-					<role>developer</role>
-				</roles>
 									</params>
 								</modulehook>
 							</modulehooks>
