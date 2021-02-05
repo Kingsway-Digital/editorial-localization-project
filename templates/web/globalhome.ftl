@@ -40,9 +40,9 @@
                 However, for demonstration purposes,
                 it is shown here in detail.</p>
                 <ul>
-                    <li><a href="/?locale=en_us">English</a></li>
-                    <li><a href="/?locale=es_ar">Spanish</a></li>
-                    <li><a href="/?locale=jp_jp">Japanese</a></li>
+                    <li><a href="/index_en_us.xml">English</a></li>
+                    <li><a href="/index_es_ar.xml">Spanish</a></li>
+                    <li><a href="/index_jp_jp.xml">Japanese</a></li>
                 </ul>
             </nav>
         </div>
