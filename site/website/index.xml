@@ -13,8 +13,8 @@
 	<folder-name/>
 	<createdDate>2017-1-31T16:18:14.000Z</createdDate>
 	<createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
-	<lastModifiedDate>2021-02-05T16:36:09.036Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-02-05T16:36:09.036Z</lastModifiedDate_dt>
+	<lastModifiedDate>2021-02-05T16:40:46.642Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-02-05T16:40:46.642Z</lastModifiedDate_dt>
 	<title_t>Localization Example</title_t>
 	<navLabel>GlobalHome</navLabel>
 	<body_html>&lt;h2&gt;Multi-Lingual Support in Crafter CMS 3&lt;/h2&gt;
@@ -108,10 +108,15 @@
 &lt;/ul&gt;
 &lt;h4&gt;Content Rendering&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;The Site Item Service has been taught how to fall back to a default language if the requested language is not found
+&lt;li&gt;Crafter Engine has a feature that supports advanced item path manipulation
+&lt;ul&gt;
+&lt;li&gt;This can be configured to provide translation fallback support, and it is implemented in the Site Item Service.&lt;/li&gt;
+&lt;li&gt;If the item in the requested language is not available, Crafter will look for the language in the "fallback" language and return it instead.
 &lt;ul&gt;
 &lt;li&gt;Thus, if you request an item /site/website/jp/style/index.xml, but no such page exists, Crafter will automatically return /site/website/en/style/index.xml for you.&lt;/li&gt;
 &lt;li&gt;The same applies when you look up a component - if you request a component by the path of a translation that does not exist, it will return the fallback language for you&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;This works for URLs as well
@@ -122,8 +127,8 @@
 &lt;li&gt;When calling renderComponent (in Freemarker), or when returning flattened nested components, no fallback is applied.
 &lt;ul&gt;
 &lt;li&gt;This could be what you want, or not, depending on your use case&lt;/li&gt;
-&lt;li&gt;If you need to try to render a translation if found, you need to get the path of the nested component, manually change its path to the one you hope to retrieve and then render that component instead (either in freemarker or in react)&lt;/li&gt;
-&lt;li&gt;If you are using react, don't request flattened objects if you plan to look up nested relationships&lt;/li&gt;
+&lt;li&gt;If you need to try to render a translation if found, you need to get the path of the nested component, manually change its path to the one you hope to retrieve and then render that component instead (either in freemarker via headless APIs)&lt;/li&gt;
+&lt;li&gt;If you are using headless APIs, don't request flattened objects if you plan to look up nested relationships&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Be aware that the default navigation builder and navigation services will return actual pages, not links to&amp;nbsp; pages that "hopefully" exist.&amp;nbsp;
@@ -133,15 +138,16 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;&lt;br /&gt;&lt;/h3&gt;
-&lt;h3&gt;To Do&lt;/h3&gt;
+&lt;h3&gt;Additional Customization Opportunities&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;span style="color: #e74c3c;"&gt;Fix main nav to support URLs for pages that don't exist yet &lt;strong&gt;(will not fix)&lt;/strong&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;restrict access to folders based on editor's role&lt;/li&gt;
-&lt;li&gt;Configure {locale} macro in the form controls when creating new components&lt;/li&gt;
-&lt;li&gt;Maybe: page controller for search example&lt;/li&gt;
+&lt;li&gt;Rewrite main nav to support URLs for pages that don't exist yet&lt;/li&gt;
+&lt;li&gt;Custom node selector data source that only presents items in the locale of the parent content item, and that also ensures that new items are stored in the correct location&lt;/li&gt;
+&lt;li&gt;Custom node selector form control that displays the locale of the rendered content item.&lt;/li&gt;
+&lt;li&gt;Filter search results by locale&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Done&lt;/h3&gt;
 &lt;ul&gt;
+&lt;li&gt;Restrict access to sidebar folders based on the editor's role&lt;/li&gt;
 &lt;li&gt;Update targeting system to cause Engine (and the SiteItemService) to load by locale&lt;/li&gt;
 &lt;li&gt;Reconfigure sidebar to show locale-specific homes&lt;/li&gt;
 &lt;li&gt;Move content into folders by locale (done)&lt;/li&gt;
