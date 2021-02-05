@@ -605,7 +605,7 @@
 					<properties>
 						<property>
 							<name>repoPath</name>
-							<value>/site/components/</value>
+							<value>/site/components/left-rails/</value>
 								<type>undefined</type>
 						</property>
 						<property>
