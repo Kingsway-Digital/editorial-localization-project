@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/category-landing</content-type>
+	<display-template>/templates/web/pages/category-landing.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>def257a5</objectGroupId>
+	<objectId>def257a5-def9-4937-a620-42a938e5e1fe</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>health</folder-name>
+	<placeInNav>true</placeInNav>
+	<orderDefault_f>0.0</orderDefault_f>
+	<internal-name>Health (es)</internal-name>
+	<title_t>Health (es)</title_t>
+	<header/>
+	<createdDate>2017-3-14T15:21:57.000Z</createdDate>
+	<createdDate_dt>2017-3-14T15:21:57.000Z</createdDate_dt>
+	<lastModifiedDate>2021-02-04T21:49:22.815Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-02-04T21:49:22.815Z</lastModifiedDate_dt>
+	<left-rail/>
+	<category_s>health</category_s>
+	<max_articles_i>10</max_articles_i>
+	<articles_title_t>Health (es)</articles_title_t>
+	<disabled>false</disabled>
+	<header_o item-list="true"/>
+	<left-rail_o item-list="true"/>
+</page>
